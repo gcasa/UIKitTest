@@ -2,10 +2,23 @@
 #import "BasicViewController.h"
 
 @implementation AppDelegate
+@synthesize window = _window;
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
-    self.window.rootViewController = [[BasicViewController alloc] init];
+    UIWindow *window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    BasicViewController *controller = [[BasicViewController alloc] init];
+    UINavigationController *navigation = [[UINavigationController alloc] initWithRootViewController:controller];
+    window.rootViewController = navigation;
+    self.window = window;
+    [navigation release];
+    [controller release];
+    [window release];
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+- (void)dealloc {
+    [_window release];
+    [super dealloc];
 }
 @end
