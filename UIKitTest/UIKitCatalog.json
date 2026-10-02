@@ -1,0 +1,3674 @@
+{
+  "sdk": "iPhoneSimulator26.2.sdk",
+  "scope": "Named Objective-C classes declared in public UIKit headers; includes platform-specific and deprecated declarations.",
+  "classes": [
+    {
+      "name": "NSAdaptiveImageGlyph",
+      "superclass": "NSObject",
+      "header": "NSAdaptiveImageGlyph.h",
+      "availability": "API_AVAILABLE(macos(15.0), ios(18.0), tvos(18.0), watchos(11.0), visionos(2.0))",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "NSCollectionLayoutAnchor",
+      "superclass": "NSObject",
+      "header": "UICollectionViewCompositionalLayout.h",
+      "availability": "API_AVAILABLE(ios(13.0), tvos(13.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "NSCollectionLayoutBoundarySupplementaryItem",
+      "superclass": "NSCollectionLayoutSupplementaryItem",
+      "header": "UICollectionViewCompositionalLayout.h",
+      "availability": "API_AVAILABLE(ios(13.0), tvos(13.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "NSCollectionLayoutDecorationItem",
+      "superclass": "NSCollectionLayoutItem",
+      "header": "UICollectionViewCompositionalLayout.h",
+      "availability": "API_AVAILABLE(ios(13.0), tvos(13.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "NSCollectionLayoutDimension",
+      "superclass": "NSObject",
+      "header": "UICollectionViewCompositionalLayout.h",
+      "availability": "API_AVAILABLE(ios(13.0), tvos(13.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "NSCollectionLayoutEdgeSpacing",
+      "superclass": "NSObject",
+      "header": "UICollectionViewCompositionalLayout.h",
+      "availability": "API_AVAILABLE(ios(13.0), tvos(13.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "NSCollectionLayoutGroup",
+      "superclass": "NSCollectionLayoutItem",
+      "header": "UICollectionViewCompositionalLayout.h",
+      "availability": "API_AVAILABLE(ios(13.0), tvos(13.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "NSCollectionLayoutGroupCustomItem",
+      "superclass": "NSObject",
+      "header": "UICollectionViewCompositionalLayout.h",
+      "availability": "API_AVAILABLE(ios(13.0), tvos(13.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "NSCollectionLayoutItem",
+      "superclass": "NSObject",
+      "header": "UICollectionViewCompositionalLayout.h",
+      "availability": "API_AVAILABLE(ios(13.0), tvos(13.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "NSCollectionLayoutSection",
+      "superclass": "NSObject",
+      "header": "UICollectionViewCompositionalLayout.h",
+      "availability": "API_AVAILABLE(ios(13.0), tvos(13.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "NSCollectionLayoutSize",
+      "superclass": "NSObject",
+      "header": "UICollectionViewCompositionalLayout.h",
+      "availability": "API_AVAILABLE(ios(13.0), tvos(13.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "NSCollectionLayoutSpacing",
+      "superclass": "NSObject",
+      "header": "UICollectionViewCompositionalLayout.h",
+      "availability": "API_AVAILABLE(ios(13.0), tvos(13.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "NSCollectionLayoutSupplementaryItem",
+      "superclass": "NSCollectionLayoutItem",
+      "header": "UICollectionViewCompositionalLayout.h",
+      "availability": "API_AVAILABLE(ios(13.0), tvos(13.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "NSDataAsset",
+      "superclass": "NSObject",
+      "header": "NSDataAsset.h",
+      "availability": "API_AVAILABLE(ios(9.0), macos(10.11), tvos(9.0), watchos(2.0))",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "NSDiffableDataSourceSectionSnapshot",
+      "superclass": "NSObject",
+      "header": "NSDiffableDataSourceSectionSnapshot.h",
+      "availability": "API_AVAILABLE(ios(14.0), tvos(14.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "NSDiffableDataSourceSectionTransaction",
+      "superclass": "NSObject",
+      "header": "UIDiffableDataSource.h",
+      "availability": "API_AVAILABLE(ios(14.0), tvos(14.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "NSDiffableDataSourceSnapshot",
+      "superclass": "NSObject",
+      "header": "UIDiffableDataSource.h",
+      "availability": "API_AVAILABLE(ios(13.0), tvos(13.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "NSDiffableDataSourceTransaction",
+      "superclass": "NSObject",
+      "header": "UIDiffableDataSource.h",
+      "availability": "API_AVAILABLE(ios(14.0), tvos(14.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "NSLayoutAnchor",
+      "superclass": "NSObject",
+      "header": "NSLayoutAnchor.h",
+      "availability": "API_AVAILABLE(macos(10.11), ios(9.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "NSLayoutConstraint",
+      "superclass": "NSObject",
+      "header": "NSLayoutConstraint.h",
+      "availability": "API_AVAILABLE(macos(10.7), ios(6.0), tvos(9.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "NSLayoutDimension",
+      "superclass": "NSLayoutAnchor",
+      "header": "NSLayoutAnchor.h",
+      "availability": "API_AVAILABLE(macos(10.11), ios(9.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "NSLayoutManager",
+      "superclass": "NSObject",
+      "header": "NSLayoutManager.h",
+      "availability": "API_AVAILABLE(macos(10.0), ios(7.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "NSLayoutXAxisAnchor",
+      "superclass": "NSLayoutAnchor",
+      "header": "NSLayoutAnchor.h",
+      "availability": "API_AVAILABLE(macos(10.11), ios(9.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "NSLayoutYAxisAnchor",
+      "superclass": "NSLayoutAnchor",
+      "header": "NSLayoutAnchor.h",
+      "availability": "API_AVAILABLE(macos(10.11), ios(9.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "NSMutableParagraphStyle",
+      "superclass": "NSParagraphStyle",
+      "header": "NSParagraphStyle.h",
+      "availability": "API_AVAILABLE(macos(10.0), ios(6.0), tvos(9.0), watchos(2.0), visionos(1.0))",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "NSParagraphStyle",
+      "superclass": "NSObject",
+      "header": "NSParagraphStyle.h",
+      "availability": "API_AVAILABLE(macos(10.0), ios(6.0), tvos(9.0), watchos(2.0), visionos(1.0))",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "NSShadow",
+      "superclass": "NSObject",
+      "header": "NSShadow.h",
+      "availability": "API_AVAILABLE(ios(6.0), watchos(2.0))",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "NSStringDrawingContext",
+      "superclass": "NSObject",
+      "header": "NSStringDrawing.h",
+      "availability": "API_AVAILABLE(macos(10.11), ios(6.0), tvos(9.0), watchos(2.0), visionos(1.0))",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "NSTextAttachment",
+      "superclass": "NSObject",
+      "header": "NSTextAttachment.h",
+      "availability": "API_AVAILABLE(macos(10.0), ios(7.0), tvos(9.0), watchos(2.0), visionos(1.0))",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "NSTextAttachmentViewProvider",
+      "superclass": "NSObject",
+      "header": "NSTextAttachment.h",
+      "availability": "API_AVAILABLE(macos(12.0), ios(15.0), tvos(15.0), visionos(1.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "NSTextContainer",
+      "superclass": "NSObject",
+      "header": "NSTextContainer.h",
+      "availability": "API_AVAILABLE(macos(10.0), ios(7.0), tvos(9.0), visionos(1.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "NSTextContentManager",
+      "superclass": "NSObject",
+      "header": "NSTextContentManager.h",
+      "availability": "API_AVAILABLE(macos(12.0), ios(15.0), tvos(15.0), visionos(1.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "NSTextContentStorage",
+      "superclass": "NSTextContentManager",
+      "header": "NSTextContentManager.h",
+      "availability": "API_AVAILABLE(macos(12.0), ios(15.0), tvos(15.0), visionos(1.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "NSTextElement",
+      "superclass": "NSObject",
+      "header": "NSTextElement.h",
+      "availability": "API_AVAILABLE(macos(12.0), ios(15.0), tvos(15.0), visionos(1.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "NSTextLayoutFragment",
+      "superclass": "NSObject",
+      "header": "NSTextLayoutFragment.h",
+      "availability": "API_AVAILABLE(macos(12.0), ios(15.0), tvos(15.0), visionos(1.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "NSTextLayoutManager",
+      "superclass": "NSObject",
+      "header": "NSTextLayoutManager.h",
+      "availability": "API_AVAILABLE(macos(12.0), ios(15.0), tvos(15.0), visionos(1.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "NSTextLineFragment",
+      "superclass": "NSObject",
+      "header": "NSTextLineFragment.h",
+      "availability": "API_AVAILABLE(macos(12.0), ios(15.0), tvos(15.0), visionos(1.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "NSTextList",
+      "superclass": "NSObject",
+      "header": "NSTextList.h",
+      "availability": "API_AVAILABLE(macos(10.0), ios(7.0), tvos(9.0), watchos(2.0), visionos(1.0))",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "NSTextListElement",
+      "superclass": "NSTextParagraph",
+      "header": "NSTextListElement.h",
+      "availability": "API_AVAILABLE(macos(13.0), ios(16.0), tvos(16.0), visionos(1.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "NSTextParagraph",
+      "superclass": "NSTextElement",
+      "header": "NSTextElement.h",
+      "availability": "API_AVAILABLE(macos(12.0), ios(15.0), tvos(15.0), visionos(1.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "NSTextRange",
+      "superclass": "NSObject",
+      "header": "NSTextRange.h",
+      "availability": "API_AVAILABLE(macos(12.0), ios(15.0), tvos(15.0), watchos(8.0), visionos(1.0))",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "NSTextSelection",
+      "superclass": "NSObject",
+      "header": "NSTextSelection.h",
+      "availability": "API_AVAILABLE(macos(12.0), ios(15.0), tvos(15.0), visionos(1.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "NSTextSelectionNavigation",
+      "superclass": "NSObject",
+      "header": "NSTextSelectionNavigation.h",
+      "availability": "API_AVAILABLE(macos(12.0), ios(15.0), tvos(15.0), visionos(1.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "NSTextStorage",
+      "superclass": "NSMutableAttributedString",
+      "header": "NSTextStorage.h",
+      "availability": "API_AVAILABLE(macos(10.0), ios(7.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "NSTextTab",
+      "superclass": "NSObject",
+      "header": "NSParagraphStyle.h",
+      "availability": "API_AVAILABLE(macos(10.0), ios(7.0), tvos(9.0), watchos(2.0), visionos(1.0))",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "NSTextViewportLayoutController",
+      "superclass": "NSObject",
+      "header": "NSTextViewportLayoutController.h",
+      "availability": "API_AVAILABLE(macos(12.0), ios(15.0), tvos(15.0), visionos(1.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "NSUIViewToolbarItem",
+      "superclass": "NSToolbarItem",
+      "header": "NSToolbar+UIKitAdditions.h",
+      "availability": "API_AVAILABLE(macCatalyst(16.0))",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIAcceleration",
+      "superclass": "NSObject",
+      "header": "UIAccelerometer.h",
+      "availability": "API_DEPRECATED(\"UIAcceleration has been replaced by the CoreMotion framework\", ios(2.0, 5.0))\nAPI_UNAVAILABLE(visionos, tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIAccelerometer",
+      "superclass": "NSObject",
+      "header": "UIAccelerometer.h",
+      "availability": "API_DEPRECATED(\"UIAccelerometer has been replaced by the CoreMotion framework\", ios(2.0, 5.0))\nAPI_UNAVAILABLE(visionos, tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIAccessibilityCustomAction",
+      "superclass": "NSObject",
+      "header": "UIAccessibilityCustomAction.h",
+      "availability": "API_AVAILABLE(ios(8.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIAccessibilityCustomRotor",
+      "superclass": "NSObject",
+      "header": "UIAccessibilityCustomRotor.h",
+      "availability": "API_AVAILABLE(ios(10.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIAccessibilityCustomRotorItemResult",
+      "superclass": "NSObject",
+      "header": "UIAccessibilityCustomRotor.h",
+      "availability": "API_AVAILABLE(ios(10.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIAccessibilityCustomRotorSearchPredicate",
+      "superclass": "NSObject",
+      "header": "UIAccessibilityCustomRotor.h",
+      "availability": "API_AVAILABLE(ios(10.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIAccessibilityElement",
+      "superclass": "UIResponder",
+      "header": "UIAccessibilityElement.h",
+      "availability": "API_AVAILABLE(ios(3.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIAccessibilityLocationDescriptor",
+      "superclass": "NSObject",
+      "header": "UIAccessibilityLocationDescriptor.h",
+      "availability": "API_AVAILABLE(ios(11.0))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIAction",
+      "superclass": "UIMenuElement",
+      "header": "UIAction.h",
+      "availability": "API_AVAILABLE(ios(13.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIActionSheet",
+      "superclass": "UIView",
+      "header": "UIActionSheet.h",
+      "availability": "API_DEPRECATED(\"UIActionSheet is deprecated. Use UIAlertController with a preferredStyle of UIAlertControllerStyleActionSheet instead\", ios(2.0, 8.3))\nAPI_UNAVAILABLE(tvos)\nAPI_UNAVAILABLE(visionos, watchos)",
+      "category": "Views"
+    },
+    {
+      "name": "UIActivity",
+      "superclass": "NSObject",
+      "header": "UIActivity.h",
+      "availability": "API_AVAILABLE(ios(6.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIActivityCollaborationModeRestriction",
+      "superclass": "NSObject",
+      "header": "UIActivityCollaborationModeRestriction.h",
+      "availability": "API_AVAILABLE(ios(18.0))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIActivityIndicatorView",
+      "superclass": "UIView",
+      "header": "UIActivityIndicatorView.h",
+      "availability": "API_AVAILABLE(ios(2.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Views"
+    },
+    {
+      "name": "UIActivityItemProvider",
+      "superclass": "NSOperation",
+      "header": "UIActivityItemProvider.h",
+      "availability": "API_AVAILABLE(ios(6.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIActivityItemsConfiguration",
+      "superclass": "NSObject",
+      "header": "UIActivityItemsConfiguration.h",
+      "availability": "API_AVAILABLE(ios(13.0))\nAPI_UNAVAILABLE(watchos)\nAPI_UNAVAILABLE(tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIActivityViewController",
+      "superclass": "UIViewController",
+      "header": "UIActivityViewController.h",
+      "availability": "API_AVAILABLE(ios(6.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "View controllers"
+    },
+    {
+      "name": "UIAlertAction",
+      "superclass": "NSObject",
+      "header": "UIAlertController.h",
+      "availability": "API_AVAILABLE(ios(8.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIAlertController",
+      "superclass": "UIViewController",
+      "header": "UIAlertController.h",
+      "availability": "API_AVAILABLE(ios(8.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "View controllers"
+    },
+    {
+      "name": "UIAlertView",
+      "superclass": "UIView",
+      "header": "UIAlertView.h",
+      "availability": "API_DEPRECATED(\"UIAlertView is deprecated. Use UIAlertController with a preferredStyle of UIAlertControllerStyleAlert instead\", ios(2.0, 9.0))\nAPI_UNAVAILABLE(tvos)\nAPI_UNAVAILABLE(visionos, watchos)",
+      "category": "Views"
+    },
+    {
+      "name": "UIApplication",
+      "superclass": "UIResponder",
+      "header": "UIApplication.h",
+      "availability": "API_AVAILABLE(ios(2.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIApplicationShortcutIcon",
+      "superclass": "NSObject",
+      "header": "UIApplicationShortcutItem.h",
+      "availability": "API_AVAILABLE(ios(9.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIApplicationShortcutItem",
+      "superclass": "NSObject",
+      "header": "UIApplicationShortcutItem.h",
+      "availability": "API_AVAILABLE(ios(9.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIAttachmentBehavior",
+      "superclass": "UIDynamicBehavior",
+      "header": "UIAttachmentBehavior.h",
+      "availability": "API_AVAILABLE(ios(7.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIBackgroundConfiguration",
+      "superclass": "NSObject",
+      "header": "UIBackgroundConfiguration.h",
+      "availability": "API_AVAILABLE(ios(14.0), tvos(14.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIBackgroundExtensionView",
+      "superclass": "UIView",
+      "header": "UIBackgroundExtensionView.h",
+      "availability": "API_AVAILABLE(ios(26.0), tvos(26.0), visionos(26.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Views"
+    },
+    {
+      "name": "UIBandSelectionInteraction",
+      "superclass": "NSObject",
+      "header": "UIBandSelectionInteraction.h",
+      "availability": "API_AVAILABLE(ios(15.0))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIBarAppearance",
+      "superclass": "NSObject",
+      "header": "UIBarAppearance.h",
+      "availability": "API_AVAILABLE(ios(13.0), tvos(13.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIBarButtonItem",
+      "superclass": "UIBarItem",
+      "header": "UIBarButtonItem.h",
+      "availability": "API_AVAILABLE(ios(2.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIBarButtonItemAppearance",
+      "superclass": "NSObject",
+      "header": "UIBarButtonItemAppearance.h",
+      "availability": "API_AVAILABLE(ios(13.0), tvos(13.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIBarButtonItemBadge",
+      "superclass": "NSObject",
+      "header": "UIBarButtonItemBadge.h",
+      "availability": "API_AVAILABLE(ios(26.0))\nAPI_UNAVAILABLE(visionos)\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIBarButtonItemGroup",
+      "superclass": "NSObject",
+      "header": "UIBarButtonItemGroup.h",
+      "availability": "API_AVAILABLE(ios(9.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIBarButtonItemStateAppearance",
+      "superclass": "NSObject",
+      "header": "UIBarButtonItemAppearance.h",
+      "availability": "API_AVAILABLE(ios(13.0), tvos(13.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIBarItem",
+      "superclass": "NSObject",
+      "header": "UIBarItem.h",
+      "availability": "API_AVAILABLE(ios(2.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIBezierPath",
+      "superclass": "NSObject",
+      "header": "UIBezierPath.h",
+      "availability": "API_AVAILABLE(ios(3.2), watchos(2.0))",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIBlurEffect",
+      "superclass": "UIVisualEffect",
+      "header": "UIBlurEffect.h",
+      "availability": "API_AVAILABLE(ios(8.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIButton",
+      "superclass": "UIControl",
+      "header": "UIButton.h",
+      "availability": "API_AVAILABLE(ios(2.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Controls"
+    },
+    {
+      "name": "UIButtonConfiguration",
+      "superclass": "NSObject",
+      "header": "UIButtonConfiguration.h",
+      "availability": "API_AVAILABLE(ios(15.0), tvos(15.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UICalendarSelection",
+      "superclass": "NSObject",
+      "header": "UICalendarSelection.h",
+      "availability": "API_AVAILABLE(ios(16.0))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UICalendarSelectionMultiDate",
+      "superclass": "UICalendarSelection",
+      "header": "UICalendarSelectionMultiDate.h",
+      "availability": "API_AVAILABLE(ios(16.0))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UICalendarSelectionSingleDate",
+      "superclass": "UICalendarSelection",
+      "header": "UICalendarSelectionSingleDate.h",
+      "availability": "API_AVAILABLE(ios(16.0))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UICalendarSelectionWeekOfYear",
+      "superclass": "UICalendarSelection",
+      "header": "UICalendarSelectionWeekOfYear.h",
+      "availability": "API_AVAILABLE(ios(18.0))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UICalendarView",
+      "superclass": "UIView",
+      "header": "UICalendarView.h",
+      "availability": "API_AVAILABLE(ios(16.0))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Views"
+    },
+    {
+      "name": "UICalendarViewDecoration",
+      "superclass": "NSObject",
+      "header": "UICalendarViewDecoration.h",
+      "availability": "API_AVAILABLE(ios(16.0))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UICanvasFeedbackGenerator",
+      "superclass": "UIFeedbackGenerator",
+      "header": "UICanvasFeedbackGenerator.h",
+      "availability": "API_AVAILABLE(ios(17.5))\nAPI_UNAVAILABLE(visionos)\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UICellAccessory",
+      "superclass": "NSObject",
+      "header": "UICellAccessory.h",
+      "availability": "API_AVAILABLE(ios(14.0), tvos(14.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UICellAccessoryCheckmark",
+      "superclass": "UICellAccessory",
+      "header": "UICellAccessory.h",
+      "availability": "API_AVAILABLE(ios(14.0), tvos(14.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UICellAccessoryCustomView",
+      "superclass": "UICellAccessory",
+      "header": "UICellAccessory.h",
+      "availability": "API_AVAILABLE(ios(14.0), tvos(14.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UICellAccessoryDelete",
+      "superclass": "UICellAccessory",
+      "header": "UICellAccessory.h",
+      "availability": "API_AVAILABLE(ios(14.0), tvos(14.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UICellAccessoryDetail",
+      "superclass": "UICellAccessory",
+      "header": "UICellAccessory.h",
+      "availability": "API_AVAILABLE(ios(15.4), tvos(15.4))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UICellAccessoryDisclosureIndicator",
+      "superclass": "UICellAccessory",
+      "header": "UICellAccessory.h",
+      "availability": "API_AVAILABLE(ios(14.0), tvos(14.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UICellAccessoryInsert",
+      "superclass": "UICellAccessory",
+      "header": "UICellAccessory.h",
+      "availability": "API_AVAILABLE(ios(14.0), tvos(14.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UICellAccessoryLabel",
+      "superclass": "UICellAccessory",
+      "header": "UICellAccessory.h",
+      "availability": "API_AVAILABLE(ios(14.0), tvos(14.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UICellAccessoryMultiselect",
+      "superclass": "UICellAccessory",
+      "header": "UICellAccessory.h",
+      "availability": "API_AVAILABLE(ios(14.0), tvos(14.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UICellAccessoryOutlineDisclosure",
+      "superclass": "UICellAccessory",
+      "header": "UICellAccessory.h",
+      "availability": "API_AVAILABLE(ios(14.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UICellAccessoryPopUpMenu",
+      "superclass": "UICellAccessory",
+      "header": "UICellAccessory.h",
+      "availability": "API_AVAILABLE(ios(16.0))\nAPI_UNAVAILABLE(tvos)\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UICellAccessoryReorder",
+      "superclass": "UICellAccessory",
+      "header": "UICellAccessory.h",
+      "availability": "API_AVAILABLE(ios(14.0), tvos(14.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UICellConfigurationState",
+      "superclass": "UIViewConfigurationState",
+      "header": "UICellConfigurationState.h",
+      "availability": "API_AVAILABLE(ios(14.0), tvos(14.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UICloudSharingController",
+      "superclass": "UIViewController",
+      "header": "UICloudSharingController.h",
+      "availability": "API_AVAILABLE(ios(10.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "View controllers"
+    },
+    {
+      "name": "UICollectionLayoutListConfiguration",
+      "superclass": "NSObject",
+      "header": "UICollectionLayoutList.h",
+      "availability": "API_AVAILABLE(ios(14.0), tvos(14.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UICollectionLayoutSectionOrthogonalScrollingProperties",
+      "superclass": "NSObject",
+      "header": "UICollectionViewCompositionalLayout.h",
+      "availability": "API_AVAILABLE(ios(17.0), tvos(17.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UICollectionReusableView",
+      "superclass": "UIView",
+      "header": "UICollectionViewCell.h",
+      "availability": "API_AVAILABLE(ios(6.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Views"
+    },
+    {
+      "name": "UICollectionView",
+      "superclass": "UIScrollView",
+      "header": "UICollectionView.h",
+      "availability": "API_AVAILABLE(ios(6.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Views"
+    },
+    {
+      "name": "UICollectionViewCell",
+      "superclass": "UICollectionReusableView",
+      "header": "UICollectionViewCell.h",
+      "availability": "API_AVAILABLE(ios(6.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Views"
+    },
+    {
+      "name": "UICollectionViewCellRegistration",
+      "superclass": "NSObject",
+      "header": "UICollectionViewItemRegistration.h",
+      "availability": "API_AVAILABLE(ios(14.0), tvos(14.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UICollectionViewCompositionalLayout",
+      "superclass": "UICollectionViewLayout",
+      "header": "UICollectionViewCompositionalLayout.h",
+      "availability": "API_AVAILABLE(ios(13.0), tvos(13.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UICollectionViewCompositionalLayoutConfiguration",
+      "superclass": "NSObject",
+      "header": "UICollectionViewCompositionalLayout.h",
+      "availability": "API_AVAILABLE(ios(13.0), tvos(13.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UICollectionViewController",
+      "superclass": "UIViewController",
+      "header": "UICollectionViewController.h",
+      "availability": "API_AVAILABLE(ios(6.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "View controllers"
+    },
+    {
+      "name": "UICollectionViewDiffableDataSource",
+      "superclass": "NSObject",
+      "header": "UIDiffableDataSource.h",
+      "availability": "API_AVAILABLE(ios(13.0), tvos(13.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UICollectionViewDiffableDataSourceReorderingHandlers",
+      "superclass": "NSObject",
+      "header": "UIDiffableDataSource.h",
+      "availability": "API_AVAILABLE(ios(14.0), tvos(14.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UICollectionViewDiffableDataSourceSectionSnapshotHandlers",
+      "superclass": "NSObject",
+      "header": "UIDiffableDataSource.h",
+      "availability": "API_AVAILABLE(ios(14.0), tvos(14.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UICollectionViewDropPlaceholder",
+      "superclass": "UICollectionViewPlaceholder",
+      "header": "UICollectionView.h",
+      "availability": "API_AVAILABLE(ios(11.0))\nAPI_UNAVAILABLE(tvos,watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UICollectionViewDropProposal",
+      "superclass": "UIDropProposal",
+      "header": "UICollectionView.h",
+      "availability": "API_AVAILABLE(ios(11.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UICollectionViewFlowLayout",
+      "superclass": "UICollectionViewLayout",
+      "header": "UICollectionViewFlowLayout.h",
+      "availability": "API_AVAILABLE(ios(6.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UICollectionViewFlowLayoutInvalidationContext",
+      "superclass": "UICollectionViewLayoutInvalidationContext",
+      "header": "UICollectionViewFlowLayout.h",
+      "availability": "API_AVAILABLE(ios(7.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UICollectionViewFocusUpdateContext",
+      "superclass": "UIFocusUpdateContext",
+      "header": "UICollectionView.h",
+      "availability": "API_AVAILABLE(ios(9.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UICollectionViewLayout",
+      "superclass": "NSObject",
+      "header": "UICollectionViewLayout.h",
+      "availability": "API_AVAILABLE(ios(6.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UICollectionViewLayoutAttributes",
+      "superclass": "NSObject",
+      "header": "UICollectionViewLayout.h",
+      "availability": "API_AVAILABLE(ios(6.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UICollectionViewLayoutInvalidationContext",
+      "superclass": "NSObject",
+      "header": "UICollectionViewLayout.h",
+      "availability": "API_AVAILABLE(ios(7.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UICollectionViewListCell",
+      "superclass": "UICollectionViewCell",
+      "header": "UICollectionViewListCell.h",
+      "availability": "API_AVAILABLE(ios(14_0), tvos(14.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Views"
+    },
+    {
+      "name": "UICollectionViewPlaceholder",
+      "superclass": "NSObject",
+      "header": "UICollectionView.h",
+      "availability": "API_AVAILABLE(ios(11.0))\nAPI_UNAVAILABLE(tvos,watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UICollectionViewSupplementaryRegistration",
+      "superclass": "NSObject",
+      "header": "UICollectionViewItemRegistration.h",
+      "availability": "API_AVAILABLE(ios(14.0), tvos(14.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UICollectionViewTransitionLayout",
+      "superclass": "UICollectionViewLayout",
+      "header": "UICollectionViewTransitionLayout.h",
+      "availability": "API_AVAILABLE(ios(7.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UICollectionViewUpdateItem",
+      "superclass": "NSObject",
+      "header": "UICollectionViewUpdateItem.h",
+      "availability": "API_AVAILABLE(ios(6.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UICollisionBehavior",
+      "superclass": "UIDynamicBehavior",
+      "header": "UICollisionBehavior.h",
+      "availability": "API_AVAILABLE(ios(7.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIColor",
+      "superclass": "NSObject",
+      "header": "UIColor.h",
+      "availability": "API_AVAILABLE(ios(2.0), watchos(2.0))",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIColorEffect",
+      "superclass": "UIVisualEffect",
+      "header": "UIVisualEffect.h",
+      "availability": "API_AVAILABLE(ios(11.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIColorPickerViewController",
+      "superclass": "UIViewController",
+      "header": "UIColorPickerViewController.h",
+      "availability": "API_AVAILABLE(ios(14.0))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "View controllers"
+    },
+    {
+      "name": "UIColorWell",
+      "superclass": "UIControl",
+      "header": "UIColorWell.h",
+      "availability": "API_AVAILABLE(ios(14.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Controls"
+    },
+    {
+      "name": "UICommand",
+      "superclass": "UIMenuElement",
+      "header": "UICommand.h",
+      "availability": "API_AVAILABLE(ios(13.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UICommandAlternate",
+      "superclass": "NSObject",
+      "header": "UICommand.h",
+      "availability": "API_AVAILABLE(ios(13.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIContentUnavailableButtonProperties",
+      "superclass": "NSObject",
+      "header": "UIContentUnavailableButtonProperties.h",
+      "availability": "API_AVAILABLE(ios(17.0), tvos(17.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIContentUnavailableConfiguration",
+      "superclass": "NSObject",
+      "header": "UIContentUnavailableConfiguration.h",
+      "availability": "API_AVAILABLE(ios(17.0), tvos(17.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIContentUnavailableConfigurationState",
+      "superclass": "NSObject",
+      "header": "UIContentUnavailableConfigurationState.h",
+      "availability": "API_AVAILABLE(ios(17.0), tvos(17.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIContentUnavailableImageProperties",
+      "superclass": "NSObject",
+      "header": "UIContentUnavailableImageProperties.h",
+      "availability": "API_AVAILABLE(ios(17.0), tvos(17.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIContentUnavailableTextProperties",
+      "superclass": "NSObject",
+      "header": "UIContentUnavailableTextProperties.h",
+      "availability": "API_AVAILABLE(ios(17.0), tvos(17.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIContentUnavailableView",
+      "superclass": "UIView",
+      "header": "UIContentUnavailableView.h",
+      "availability": "API_AVAILABLE(ios(17.0), tvos(17.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Views"
+    },
+    {
+      "name": "UIContextMenuConfiguration",
+      "superclass": "NSObject",
+      "header": "UIContextMenuConfiguration.h",
+      "availability": "API_AVAILABLE(ios(13.0), tvos(17.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIContextMenuInteraction",
+      "superclass": "NSObject",
+      "header": "UIContextMenuInteraction.h",
+      "availability": "API_AVAILABLE(ios(13.0), tvos(17.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIContextMenuSystem",
+      "superclass": "UIMenuSystem",
+      "header": "UIContextMenuSystem.h",
+      "availability": "API_AVAILABLE(ios(26.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIContextualAction",
+      "superclass": "NSObject",
+      "header": "UIContextualAction.h",
+      "availability": "API_AVAILABLE(ios(11.0))\nAPI_UNAVAILABLE(watchos)\nAPI_UNAVAILABLE(tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIControl",
+      "superclass": "UIView",
+      "header": "UIControl.h",
+      "availability": "API_AVAILABLE(ios(2.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Controls"
+    },
+    {
+      "name": "UIConversationContext",
+      "superclass": "NSObject",
+      "header": "UIConversationContext.h",
+      "availability": "API_AVAILABLE(ios(18.4))\nAPI_UNAVAILABLE(tvos, watchos, visionos, macCatalyst)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIConversationEntry",
+      "superclass": "NSObject",
+      "header": "UIConversationEntry.h",
+      "availability": "API_AVAILABLE(ios(18.4))\nAPI_UNAVAILABLE(tvos, watchos, visionos, macCatalyst)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UICornerConfiguration",
+      "superclass": "NSObject",
+      "header": "UICornerConfiguration.h",
+      "availability": "API_AVAILABLE(ios(26.0), tvos(26.0), visionos(26.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UICornerRadius",
+      "superclass": "NSObject",
+      "header": "UICornerRadius.h",
+      "availability": "API_AVAILABLE(ios(26.0), tvos(26.0), visionos(26.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UICubicTimingParameters",
+      "superclass": "NSObject",
+      "header": "UITimingParameters.h",
+      "availability": "API_AVAILABLE(ios(10.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIDatePicker",
+      "superclass": "UIControl",
+      "header": "UIDatePicker.h",
+      "availability": "API_AVAILABLE(ios(2.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Controls"
+    },
+    {
+      "name": "UIDeferredMenuElement",
+      "superclass": "UIMenuElement",
+      "header": "UIDeferredMenuElement.h",
+      "availability": "API_AVAILABLE(ios(14.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIDeferredMenuElementProvider",
+      "superclass": "NSObject",
+      "header": "UIDeferredMenuElement.h",
+      "availability": "API_AVAILABLE(ios(26.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIDevice",
+      "superclass": "NSObject",
+      "header": "UIDevice.h",
+      "availability": "API_AVAILABLE(ios(2.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIDictationPhrase",
+      "superclass": "NSObject",
+      "header": "UITextInput.h",
+      "availability": "API_AVAILABLE(ios(5.1))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIDocument",
+      "superclass": "NSObject",
+      "header": "UIDocument.h",
+      "availability": "API_AVAILABLE(ios(5.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIDocumentBrowserAction",
+      "superclass": "NSObject",
+      "header": "UIDocumentBrowserAction.h",
+      "availability": "API_AVAILABLE(ios(11.0))\nAPI_UNAVAILABLE(watchos,tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIDocumentBrowserTransitionController",
+      "superclass": "NSObject",
+      "header": "UIDocumentBrowserViewController.h",
+      "availability": "API_AVAILABLE(ios(11.0))\nAPI_UNAVAILABLE(watchos,tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIDocumentBrowserViewController",
+      "superclass": "UIViewController",
+      "header": "UIDocumentBrowserViewController.h",
+      "availability": "API_AVAILABLE(ios(11.0))\nAPI_UNAVAILABLE(watchos,tvos)",
+      "category": "View controllers"
+    },
+    {
+      "name": "UIDocumentInteractionController",
+      "superclass": "NSObject",
+      "header": "UIDocumentInteractionController.h",
+      "availability": "API_AVAILABLE(ios(3.2))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIDocumentMenuViewController",
+      "superclass": "UIViewController",
+      "header": "UIDocumentMenuViewController.h",
+      "availability": "API_DEPRECATED(\"UIDocumentMenuViewController is deprecated. Use UIDocumentPickerViewController directly.\", ios(8.0, 11.0))\nAPI_UNAVAILABLE(tvos, visionos, watchos)",
+      "category": "View controllers"
+    },
+    {
+      "name": "UIDocumentPickerExtensionViewController",
+      "superclass": "UIViewController",
+      "header": "UIDocumentPickerExtensionViewController.h",
+      "availability": "API_DEPRECATED(\"Use enumeration based NSFileProviderExtension instead\", ios(8.0, 14.0), visionos(1.0, 1.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "View controllers"
+    },
+    {
+      "name": "UIDocumentPickerViewController",
+      "superclass": "UIViewController",
+      "header": "UIDocumentPickerViewController.h",
+      "availability": "API_AVAILABLE(ios(8.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "View controllers"
+    },
+    {
+      "name": "UIDocumentProperties",
+      "superclass": "NSObject",
+      "header": "UIDocumentProperties.h",
+      "availability": "API_AVAILABLE(ios(16.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIDocumentViewController",
+      "superclass": "UIViewController",
+      "header": "UIDocumentViewController.h",
+      "availability": "API_AVAILABLE(ios(17.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "View controllers"
+    },
+    {
+      "name": "UIDocumentViewControllerLaunchOptions",
+      "superclass": "NSObject",
+      "header": "UIDocumentViewControllerLaunchOptions.h",
+      "availability": "API_AVAILABLE(ios(18.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIDragInteraction",
+      "superclass": "NSObject",
+      "header": "UIDragInteraction.h",
+      "availability": "API_AVAILABLE(ios(11.0))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIDragItem",
+      "superclass": "NSObject",
+      "header": "UIDragItem.h",
+      "availability": "API_AVAILABLE(ios(11.0))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIDragPreview",
+      "superclass": "NSObject",
+      "header": "UIDragPreview.h",
+      "availability": "API_AVAILABLE(ios(11.0))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIDragPreviewParameters",
+      "superclass": "UIPreviewParameters",
+      "header": "UIDragPreviewParameters.h",
+      "availability": "API_AVAILABLE(ios(11.0))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIDragPreviewTarget",
+      "superclass": "UIPreviewTarget",
+      "header": "UITargetedDragPreview.h",
+      "availability": "API_AVAILABLE(ios(11.0))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIDropInteraction",
+      "superclass": "NSObject",
+      "header": "UIDropInteraction.h",
+      "availability": "API_AVAILABLE(ios(11.0))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIDropProposal",
+      "superclass": "NSObject",
+      "header": "UIDropInteraction.h",
+      "availability": "API_AVAILABLE(ios(11.0))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIDynamicAnimator",
+      "superclass": "NSObject",
+      "header": "UIDynamicAnimator.h",
+      "availability": "API_AVAILABLE(ios(7.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIDynamicBehavior",
+      "superclass": "NSObject",
+      "header": "UIDynamicBehavior.h",
+      "availability": "API_AVAILABLE(ios(7.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIDynamicItemBehavior",
+      "superclass": "UIDynamicBehavior",
+      "header": "UIDynamicItemBehavior.h",
+      "availability": "API_AVAILABLE(ios(7.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIDynamicItemGroup",
+      "superclass": "NSObject",
+      "header": "UIDynamicBehavior.h",
+      "availability": "API_AVAILABLE(ios(9.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIEditMenuConfiguration",
+      "superclass": "NSObject",
+      "header": "UIEditMenuInteraction.h",
+      "availability": "API_AVAILABLE(ios(16.0))\nAPI_UNAVAILABLE(tvos)\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIEditMenuInteraction",
+      "superclass": "NSObject",
+      "header": "UIEditMenuInteraction.h",
+      "availability": "API_AVAILABLE(ios(16.0))\nAPI_UNAVAILABLE(tvos)\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIEvent",
+      "superclass": "NSObject",
+      "header": "UIEvent.h",
+      "availability": "API_AVAILABLE(ios(2.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIEventAttribution",
+      "superclass": "NSObject",
+      "header": "UIEventAttribution.h",
+      "availability": "API_AVAILABLE(ios(14.5))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIEventAttributionView",
+      "superclass": "UIView",
+      "header": "UIEventAttributionView.h",
+      "availability": "API_AVAILABLE(ios(14.5))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Views"
+    },
+    {
+      "name": "UIFeedbackGenerator",
+      "superclass": "NSObject",
+      "header": "UIFeedbackGenerator.h",
+      "availability": "API_AVAILABLE(ios(10.0))\nAPI_UNAVAILABLE(visionos, tvos)\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIFieldBehavior",
+      "superclass": "UIDynamicBehavior",
+      "header": "UIFieldBehavior.h",
+      "availability": "API_AVAILABLE(ios(9.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIFindInteraction",
+      "superclass": "NSObject",
+      "header": "UIFindInteraction.h",
+      "availability": "API_AVAILABLE(ios(16.0))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIFindSession",
+      "superclass": "NSObject",
+      "header": "UIFindSession.h",
+      "availability": "API_AVAILABLE(ios(16.0))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIFocusAnimationCoordinator",
+      "superclass": "NSObject",
+      "header": "UIFocusAnimationCoordinator.h",
+      "availability": "API_AVAILABLE(ios(9.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIFocusDebugger",
+      "superclass": "NSObject",
+      "header": "UIFocusDebugger.h",
+      "availability": "API_AVAILABLE(ios(11.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIFocusEffect",
+      "superclass": "NSObject",
+      "header": "UIFocusEffect.h",
+      "availability": "API_AVAILABLE(ios(15.0))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIFocusGuide",
+      "superclass": "UILayoutGuide",
+      "header": "UIFocusGuide.h",
+      "availability": "API_AVAILABLE(ios(9.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Layout"
+    },
+    {
+      "name": "UIFocusHaloEffect",
+      "superclass": "UIFocusEffect",
+      "header": "UIFocusEffect.h",
+      "availability": "API_AVAILABLE(ios(15.0))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIFocusMovementHint",
+      "superclass": "NSObject",
+      "header": "UIFocusMovementHint.h",
+      "availability": "API_AVAILABLE(ios(12.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIFocusSystem",
+      "superclass": "NSObject",
+      "header": "UIFocusSystem.h",
+      "availability": "API_AVAILABLE(ios(11.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIFocusUpdateContext",
+      "superclass": "NSObject",
+      "header": "UIFocus.h",
+      "availability": "API_AVAILABLE(ios(9.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIFont",
+      "superclass": "NSObject",
+      "header": "UIFont.h",
+      "availability": "API_AVAILABLE(ios(2.0), watchos(2.0))",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIFontDescriptor",
+      "superclass": "NSObject",
+      "header": "UIFontDescriptor.h",
+      "availability": "API_AVAILABLE(ios(7.0), watchos(2.0))",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIFontMetrics",
+      "superclass": "NSObject",
+      "header": "UIFontMetrics.h",
+      "availability": "API_AVAILABLE(ios(11.0),tvos(11.0),watchos(4.0))",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIFontPickerViewController",
+      "superclass": "UIViewController",
+      "header": "UIFontPickerViewController.h",
+      "availability": "API_AVAILABLE(ios(13.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "View controllers"
+    },
+    {
+      "name": "UIFontPickerViewControllerConfiguration",
+      "superclass": "NSObject",
+      "header": "UIFontPickerViewControllerConfiguration.h",
+      "availability": "API_AVAILABLE(ios(13.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIGestureRecognizer",
+      "superclass": "NSObject",
+      "header": "UIGestureRecognizer.h",
+      "availability": "API_AVAILABLE(ios(3.2))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Gestures"
+    },
+    {
+      "name": "UIGlassContainerEffect",
+      "superclass": "UIVisualEffect",
+      "header": "UIGlassEffect.h",
+      "availability": "API_AVAILABLE(ios(26.0))\nAPI_UNAVAILABLE(visionos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIGlassEffect",
+      "superclass": "UIVisualEffect",
+      "header": "UIGlassEffect.h",
+      "availability": "API_AVAILABLE(ios(26.0))\nAPI_UNAVAILABLE(visionos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIGraphicsImageRenderer",
+      "superclass": "UIGraphicsRenderer",
+      "header": "UIGraphicsImageRenderer.h",
+      "availability": "API_AVAILABLE(ios(10.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIGraphicsImageRendererContext",
+      "superclass": "UIGraphicsRendererContext",
+      "header": "UIGraphicsImageRenderer.h",
+      "availability": "API_AVAILABLE(ios(10.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIGraphicsImageRendererFormat",
+      "superclass": "UIGraphicsRendererFormat",
+      "header": "UIGraphicsImageRenderer.h",
+      "availability": "API_AVAILABLE(ios(10.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIGraphicsPDFRenderer",
+      "superclass": "UIGraphicsRenderer",
+      "header": "UIGraphicsPDFRenderer.h",
+      "availability": "API_AVAILABLE(ios(10.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIGraphicsPDFRendererContext",
+      "superclass": "UIGraphicsRendererContext",
+      "header": "UIGraphicsPDFRenderer.h",
+      "availability": "API_AVAILABLE(ios(10.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIGraphicsPDFRendererFormat",
+      "superclass": "UIGraphicsRendererFormat",
+      "header": "UIGraphicsPDFRenderer.h",
+      "availability": "API_AVAILABLE(ios(10.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIGraphicsRenderer",
+      "superclass": "NSObject",
+      "header": "UIGraphicsRenderer.h",
+      "availability": "API_AVAILABLE(ios(10.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIGraphicsRendererContext",
+      "superclass": "NSObject",
+      "header": "UIGraphicsRenderer.h",
+      "availability": "API_AVAILABLE(ios(10.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIGraphicsRendererFormat",
+      "superclass": "NSObject",
+      "header": "UIGraphicsRenderer.h",
+      "availability": "API_AVAILABLE(ios(10.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIGravityBehavior",
+      "superclass": "UIDynamicBehavior",
+      "header": "UIGravityBehavior.h",
+      "availability": "API_AVAILABLE(ios(7.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIHoverAutomaticEffect",
+      "superclass": "NSObject",
+      "header": "UIHoverEffect.h",
+      "availability": "API_AVAILABLE(ios(17.0), visionos(1.0))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIHoverEffectLayer",
+      "superclass": "CALayer",
+      "header": "UIHoverEffectLayer.h",
+      "availability": "API_AVAILABLE(visionos(1.0))\nAPI_UNAVAILABLE(ios)\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIHoverGestureRecognizer",
+      "superclass": "UIGestureRecognizer",
+      "header": "UIHoverGestureRecognizer.h",
+      "availability": "API_AVAILABLE(ios(13.0))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Gestures"
+    },
+    {
+      "name": "UIHoverHighlightEffect",
+      "superclass": "NSObject",
+      "header": "UIHoverEffect.h",
+      "availability": "API_AVAILABLE(ios(17.0), visionos(1.0))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIHoverLiftEffect",
+      "superclass": "NSObject",
+      "header": "UIHoverEffect.h",
+      "availability": "API_AVAILABLE(ios(17.0), visionos(1.0))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIHoverStyle",
+      "superclass": "NSObject",
+      "header": "UIHoverStyle.h",
+      "availability": "API_AVAILABLE(ios(17.0), visionos(1.0))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIImage",
+      "superclass": "NSObject",
+      "header": "UIImage.h",
+      "availability": "API_AVAILABLE(ios(2.0), watchos(2.0))",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIImageAsset",
+      "superclass": "NSObject",
+      "header": "UIImageAsset.h",
+      "availability": "API_AVAILABLE(ios(8.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIImageConfiguration",
+      "superclass": "NSObject",
+      "header": "UIImageConfiguration.h",
+      "availability": "API_AVAILABLE(ios(13.0), tvos(13.0), watchos(6.0))",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIImagePickerController",
+      "superclass": "UINavigationController",
+      "header": "UIImagePickerController.h",
+      "availability": "API_AVAILABLE(ios(2.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "View controllers"
+    },
+    {
+      "name": "UIImageReader",
+      "superclass": "NSObject",
+      "header": "UIImageReader.h",
+      "availability": "API_AVAILABLE(ios(17.0), tvos(17.0), watchos(10.0))",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIImageReaderConfiguration",
+      "superclass": "NSObject",
+      "header": "UIImageReader.h",
+      "availability": "API_AVAILABLE(ios(17.0), tvos(17.0), watchos(10.0))",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIImageSymbolConfiguration",
+      "superclass": "UIImageConfiguration",
+      "header": "UIImageSymbolConfiguration.h",
+      "availability": "API_AVAILABLE(ios(13.0),tvos(13.0),watchos(6.0))",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIImageView",
+      "superclass": "UIView",
+      "header": "UIImageView.h",
+      "availability": "API_AVAILABLE(ios(2.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Views"
+    },
+    {
+      "name": "UIImpactFeedbackGenerator",
+      "superclass": "UIFeedbackGenerator",
+      "header": "UIImpactFeedbackGenerator.h",
+      "availability": "API_AVAILABLE(ios(10.0))\nAPI_UNAVAILABLE(visionos, tvos)\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIIndirectScribbleInteraction",
+      "superclass": "NSObject",
+      "header": "UIIndirectScribbleInteraction.h",
+      "availability": "API_AVAILABLE(ios(14.0))\nAPI_UNAVAILABLE(visionos)\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIInputSuggestion",
+      "superclass": "NSObject",
+      "header": "UIInputSuggestion.h",
+      "availability": "API_AVAILABLE(ios(18.4))\nAPI_UNAVAILABLE(tvos, watchos, visionos, macCatalyst)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIInputView",
+      "superclass": "UIView",
+      "header": "UIInputView.h",
+      "availability": "API_AVAILABLE(ios(7.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Views"
+    },
+    {
+      "name": "UIInputViewController",
+      "superclass": "UIViewController",
+      "header": "UIInputViewController.h",
+      "availability": "API_AVAILABLE(ios(8.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "View controllers"
+    },
+    {
+      "name": "UIInterpolatingMotionEffect",
+      "superclass": "UIMotionEffect",
+      "header": "UIMotionEffect.h",
+      "availability": "API_AVAILABLE(ios(7.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIKey",
+      "superclass": "NSObject",
+      "header": "UIKey.h",
+      "availability": "API_AVAILABLE(ios(13.4), tvos(13.4))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIKeyCommand",
+      "superclass": "UICommand",
+      "header": "UIKeyCommand.h",
+      "availability": "API_AVAILABLE(ios(7.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIKeyboardLayoutGuide",
+      "superclass": "UITrackingLayoutGuide",
+      "header": "UIKeyboardLayoutGuide.h",
+      "availability": "API_AVAILABLE(ios(15.0))\nAPI_UNAVAILABLE(tvos)\nAPI_UNAVAILABLE(watchos)",
+      "category": "Layout"
+    },
+    {
+      "name": "UILabel",
+      "superclass": "UIView",
+      "header": "UILabel.h",
+      "availability": "API_AVAILABLE(ios(2.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Views"
+    },
+    {
+      "name": "UILargeContentViewerInteraction",
+      "superclass": "NSObject",
+      "header": "UILargeContentViewer.h",
+      "availability": "API_AVAILABLE(ios(13.0))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UILayoutGuide",
+      "superclass": "NSObject",
+      "header": "UILayoutGuide.h",
+      "availability": "API_AVAILABLE(ios(9.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Layout"
+    },
+    {
+      "name": "UILexicon",
+      "superclass": "NSObject",
+      "header": "UILexicon.h",
+      "availability": "API_AVAILABLE(ios(8.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UILexiconEntry",
+      "superclass": "NSObject",
+      "header": "UILexicon.h",
+      "availability": "API_AVAILABLE(ios(8.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIListContentConfiguration",
+      "superclass": "NSObject",
+      "header": "UIListContentConfiguration.h",
+      "availability": "API_AVAILABLE(ios(14.0), tvos(14.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIListContentImageProperties",
+      "superclass": "NSObject",
+      "header": "UIListContentImageProperties.h",
+      "availability": "API_AVAILABLE(ios(14.0), tvos(14.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIListContentTextProperties",
+      "superclass": "NSObject",
+      "header": "UIListContentTextProperties.h",
+      "availability": "API_AVAILABLE(ios(14.0), tvos(14.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIListContentView",
+      "superclass": "UIView",
+      "header": "UIListContentConfiguration.h",
+      "availability": "API_AVAILABLE(ios(14.0), tvos(14.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Views"
+    },
+    {
+      "name": "UIListSeparatorConfiguration",
+      "superclass": "NSObject",
+      "header": "UIListSeparatorConfiguration.h",
+      "availability": "API_AVAILABLE(ios(14.5))\nAPI_UNAVAILABLE(watchos)\nAPI_UNAVAILABLE(tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UILocalNotification",
+      "superclass": "NSObject",
+      "header": "UILocalNotification.h",
+      "availability": "API_DEPRECATED(\"Use UserNotifications Framework's UNNotificationRequest\", ios(4.0, 10.0), watchos(2.0, 3.0))\nAPI_UNAVAILABLE(visionos)\nAPI_UNAVAILABLE(tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UILocalizedIndexedCollation",
+      "superclass": "NSObject",
+      "header": "UILocalizedIndexedCollation.h",
+      "availability": "API_AVAILABLE(ios(3.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UILongPressGestureRecognizer",
+      "superclass": "UIGestureRecognizer",
+      "header": "UILongPressGestureRecognizer.h",
+      "availability": "API_AVAILABLE(ios(3.2))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Gestures"
+    },
+    {
+      "name": "UIMailConversationContext",
+      "superclass": "UIConversationContext",
+      "header": "UIMailConversationContext.h",
+      "availability": "API_AVAILABLE(ios(18.4))\nAPI_UNAVAILABLE(tvos, watchos, visionos, macCatalyst)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIMailConversationEntry",
+      "superclass": "UIConversationEntry",
+      "header": "UIMailConversationEntry.h",
+      "availability": "API_AVAILABLE(ios(18.4))\nAPI_UNAVAILABLE(tvos, watchos, visionos, macCatalyst)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIMainMenuSystem",
+      "superclass": "UIMenuSystem",
+      "header": "UIMainMenuSystem.h",
+      "availability": "API_AVAILABLE(ios(26.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIMainMenuSystemConfiguration",
+      "superclass": "NSObject",
+      "header": "UIMainMenuSystem.h",
+      "availability": "API_AVAILABLE(ios(26.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIManagedDocument",
+      "superclass": "UIDocument",
+      "header": "UIManagedDocument.h",
+      "availability": "API_AVAILABLE(ios(5.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIMarkupTextPrintFormatter",
+      "superclass": "UIPrintFormatter",
+      "header": "UIPrintFormatter.h",
+      "availability": "API_AVAILABLE(ios(4.2))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIMenu",
+      "superclass": "UIMenuElement",
+      "header": "UIMenu.h",
+      "availability": "API_AVAILABLE(ios(13.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIMenuController",
+      "superclass": "NSObject",
+      "header": "UIMenuController.h",
+      "availability": "API_DEPRECATED(\"UIMenuController is deprecated. Use UIEditMenuInteraction instead.\", ios(3.0, 16.0), visionos(1.0, 1.0))\nAPI_UNAVAILABLE(tvos)\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIMenuDisplayPreferences",
+      "superclass": "NSObject",
+      "header": "UIMenuDisplayPreferences.h",
+      "availability": "API_AVAILABLE(ios(17.4))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIMenuElement",
+      "superclass": "NSObject",
+      "header": "UIMenuElement.h",
+      "availability": "API_AVAILABLE(ios(13.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIMenuItem",
+      "superclass": "NSObject",
+      "header": "UIMenuController.h",
+      "availability": "API_DEPRECATED(\"UIMenuItem is deprecated. Use UIEditMenuInteraction instead.\", ios(3.2, 16.0), visionos(1.0, 1.0))\nAPI_UNAVAILABLE(tvos)\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIMenuSystem",
+      "superclass": "NSObject",
+      "header": "UIMenuSystem.h",
+      "availability": "API_AVAILABLE(ios(13.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIMenuSystemFindElementGroupConfiguration",
+      "superclass": "NSObject",
+      "header": "UIMenuSystem.h",
+      "availability": "API_AVAILABLE(ios(26.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIMessageConversationContext",
+      "superclass": "UIConversationContext",
+      "header": "UIMessageConversationContext.h",
+      "availability": "API_AVAILABLE(ios(18.4))\nAPI_UNAVAILABLE(tvos, watchos, visionos, macCatalyst)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIMessageConversationEntry",
+      "superclass": "UIConversationEntry",
+      "header": "UIMessageConversationEntry.h",
+      "availability": "API_AVAILABLE(ios(18.4))\nAPI_UNAVAILABLE(tvos, watchos, visionos, macCatalyst)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIMotionEffect",
+      "superclass": "NSObject",
+      "header": "UIMotionEffect.h",
+      "availability": "API_AVAILABLE(ios(7.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIMotionEffectGroup",
+      "superclass": "UIMotionEffect",
+      "header": "UIMotionEffect.h",
+      "availability": "API_AVAILABLE(ios(7.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIMutableApplicationShortcutItem",
+      "superclass": "UIApplicationShortcutItem",
+      "header": "UIApplicationShortcutItem.h",
+      "availability": "API_AVAILABLE(ios(9.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIMutableUserNotificationAction",
+      "superclass": "UIUserNotificationAction",
+      "header": "UIUserNotificationSettings.h",
+      "availability": "API_DEPRECATED(\"Use UserNotifications Framework's UNNotificationAction\", ios(8.0, 10.0))\nAPI_UNAVAILABLE(tvos)\nAPI_UNAVAILABLE(visionos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIMutableUserNotificationCategory",
+      "superclass": "UIUserNotificationCategory",
+      "header": "UIUserNotificationSettings.h",
+      "availability": "API_DEPRECATED(\"Use UserNotifications Framework's UNNotificationCategory\", ios(8.0, 10.0))\nAPI_UNAVAILABLE(tvos)\nAPI_UNAVAILABLE(visionos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UINavigationBar",
+      "superclass": "UIView",
+      "header": "UINavigationBar.h",
+      "availability": "API_AVAILABLE(ios(2.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Views"
+    },
+    {
+      "name": "UINavigationBarAppearance",
+      "superclass": "UIBarAppearance",
+      "header": "UINavigationBarAppearance.h",
+      "availability": "API_AVAILABLE(ios(13.0), tvos(13.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UINavigationController",
+      "superclass": "UIViewController",
+      "header": "UINavigationController.h",
+      "availability": "API_AVAILABLE(ios(2.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "View controllers"
+    },
+    {
+      "name": "UINavigationItem",
+      "superclass": "NSObject",
+      "header": "UINavigationItem.h",
+      "availability": "API_AVAILABLE(ios(2.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UINib",
+      "superclass": "NSObject",
+      "header": "UINib.h",
+      "availability": "API_AVAILABLE(ios(4.0))\nAPI_UNAVAILABLE(watchos)\nAPI_DEPRECATED(\"Loading Interface Builder products will not be supported in a future version of visionOS.\", visionos(1.0, 1.0))",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UINotificationFeedbackGenerator",
+      "superclass": "UIFeedbackGenerator",
+      "header": "UINotificationFeedbackGenerator.h",
+      "availability": "API_AVAILABLE(ios(10.0))\nAPI_UNAVAILABLE(visionos, tvos)\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIOpenURLContext",
+      "superclass": "NSObject",
+      "header": "UIOpenURLContext.h",
+      "availability": "API_AVAILABLE(ios(13.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIPageControl",
+      "superclass": "UIControl",
+      "header": "UIPageControl.h",
+      "availability": "API_AVAILABLE(ios(2.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Controls"
+    },
+    {
+      "name": "UIPageControlProgress",
+      "superclass": "NSObject",
+      "header": "UIPageControlProgress.h",
+      "availability": "API_AVAILABLE(ios(17.0), tvos(17.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIPageControlTimerProgress",
+      "superclass": "UIPageControlProgress",
+      "header": "UIPageControlProgress.h",
+      "availability": "API_AVAILABLE(ios(17.0), tvos(17.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIPageViewController",
+      "superclass": "UIViewController",
+      "header": "UIPageViewController.h",
+      "availability": "API_AVAILABLE(ios(5.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "View controllers"
+    },
+    {
+      "name": "UIPanGestureRecognizer",
+      "superclass": "UIGestureRecognizer",
+      "header": "UIPanGestureRecognizer.h",
+      "availability": "API_AVAILABLE(ios(3.2))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Gestures"
+    },
+    {
+      "name": "UIPasteConfiguration",
+      "superclass": "NSObject",
+      "header": "UIPasteConfiguration.h",
+      "availability": "API_AVAILABLE(ios(11.0))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIPasteControl",
+      "superclass": "UIControl",
+      "header": "UIPasteControl.h",
+      "availability": "API_AVAILABLE(ios(16.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Controls"
+    },
+    {
+      "name": "UIPasteControlConfiguration",
+      "superclass": "NSObject",
+      "header": "UIPasteControl.h",
+      "availability": "API_AVAILABLE(ios(16.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIPasteboard",
+      "superclass": "NSObject",
+      "header": "UIPasteboard.h",
+      "availability": "API_AVAILABLE(ios(3.0))\nAPI_UNAVAILABLE(tvos)\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIPencilHoverPose",
+      "superclass": "NSObject",
+      "header": "UIPencilInteraction.h",
+      "availability": "API_AVAILABLE(ios(17.5), visionos(26.2))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIPencilInteraction",
+      "superclass": "NSObject",
+      "header": "UIPencilInteraction.h",
+      "availability": "API_AVAILABLE(ios(12.1), visionos(26.2))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIPencilInteractionSqueeze",
+      "superclass": "NSObject",
+      "header": "UIPencilInteraction.h",
+      "availability": "API_AVAILABLE(ios(17.5), visionos(26.2))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIPencilInteractionTap",
+      "superclass": "NSObject",
+      "header": "UIPencilInteraction.h",
+      "availability": "API_AVAILABLE(ios(17.5), visionos(26.2))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIPercentDrivenInteractiveTransition",
+      "superclass": "NSObject",
+      "header": "UIViewControllerTransitioning.h",
+      "availability": "API_AVAILABLE(ios(7.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIPickerView",
+      "superclass": "UIView",
+      "header": "UIPickerView.h",
+      "availability": "API_AVAILABLE(ios(2.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Views"
+    },
+    {
+      "name": "UIPinchGestureRecognizer",
+      "superclass": "UIGestureRecognizer",
+      "header": "UIPinchGestureRecognizer.h",
+      "availability": "API_AVAILABLE(ios(3.2))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Gestures"
+    },
+    {
+      "name": "UIPointerAccessory",
+      "superclass": "NSObject",
+      "header": "UIPointerAccessory.h",
+      "availability": "API_AVAILABLE(ios(15.0))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIPointerEffect",
+      "superclass": "NSObject",
+      "header": "UIPointerStyle.h",
+      "availability": "API_AVAILABLE(ios(13.4))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIPointerHighlightEffect",
+      "superclass": "UIPointerEffect",
+      "header": "UIPointerStyle.h",
+      "availability": "API_AVAILABLE(ios(13.4))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIPointerHoverEffect",
+      "superclass": "UIPointerEffect",
+      "header": "UIPointerStyle.h",
+      "availability": "API_AVAILABLE(ios(13.4))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIPointerInteraction",
+      "superclass": "NSObject",
+      "header": "UIPointerInteraction.h",
+      "availability": "API_AVAILABLE(ios(13.4))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIPointerLiftEffect",
+      "superclass": "UIPointerEffect",
+      "header": "UIPointerStyle.h",
+      "availability": "API_AVAILABLE(ios(13.4))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIPointerLockState",
+      "superclass": "NSObject",
+      "header": "UIPointerLockState.h",
+      "availability": "API_AVAILABLE(ios(14.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIPointerRegion",
+      "superclass": "NSObject",
+      "header": "UIPointerRegion.h",
+      "availability": "API_AVAILABLE(ios(13.4))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIPointerRegionRequest",
+      "superclass": "NSObject",
+      "header": "UIPointerInteraction.h",
+      "availability": "API_AVAILABLE(ios(13.4))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIPointerShape",
+      "superclass": "NSObject",
+      "header": "UIPointerStyle.h",
+      "availability": "API_AVAILABLE(ios(13.4))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIPointerStyle",
+      "superclass": "UIHoverStyle",
+      "header": "UIPointerStyle.h",
+      "availability": "API_AVAILABLE(ios(13.4))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIPopoverBackgroundView",
+      "superclass": "UIView",
+      "header": "UIPopoverBackgroundView.h",
+      "availability": "API_AVAILABLE(ios(5.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Views"
+    },
+    {
+      "name": "UIPopoverController",
+      "superclass": "NSObject",
+      "header": "UIPopoverController.h",
+      "availability": "API_DEPRECATED(\"UIPopoverController is deprecated. Popovers are now implemented as UIViewController presentations. Use a modal presentation style of UIModalPresentationPopover and UIPopoverPresentationController.\", ios(3.2, 9.0))\nAPI_UNAVAILABLE(visionos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIPopoverPresentationController",
+      "superclass": "UIPresentationController",
+      "header": "UIPopoverPresentationController.h",
+      "availability": "API_AVAILABLE(ios(8.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIPresentationController",
+      "superclass": "NSObject",
+      "header": "UIPresentationController.h",
+      "availability": "API_AVAILABLE(ios(8.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIPress",
+      "superclass": "NSObject",
+      "header": "UIPress.h",
+      "availability": "API_AVAILABLE(ios(9.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIPressesEvent",
+      "superclass": "UIEvent",
+      "header": "UIPressesEvent.h",
+      "availability": "API_AVAILABLE(ios(9.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIPreviewAction",
+      "superclass": "NSObject",
+      "header": "UIViewController.h",
+      "availability": "API_DEPRECATED(\"Please use UIContextMenuInteraction.\", ios(9.0, 13.0))\nAPI_UNAVAILABLE(visionos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIPreviewActionGroup",
+      "superclass": "NSObject",
+      "header": "UIViewController.h",
+      "availability": "API_DEPRECATED(\"Please use UIContextMenuInteraction.\", ios(9.0, 13.0))\nAPI_UNAVAILABLE(visionos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIPreviewInteraction",
+      "superclass": "NSObject",
+      "header": "UIPreviewInteraction.h",
+      "availability": "UIKIT_CLASS_AVAILABLE_IOS_ONLY(10_0)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIPreviewParameters",
+      "superclass": "NSObject",
+      "header": "UIPreviewParameters.h",
+      "availability": "API_AVAILABLE(ios(13.0), tvos(17.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIPreviewTarget",
+      "superclass": "NSObject",
+      "header": "UITargetedPreview.h",
+      "availability": "API_AVAILABLE(ios(13.0), tvos(17.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIPrintFormatter",
+      "superclass": "NSObject",
+      "header": "UIPrintFormatter.h",
+      "availability": "API_AVAILABLE(ios(4.2))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIPrintInfo",
+      "superclass": "NSObject",
+      "header": "UIPrintInfo.h",
+      "availability": "API_AVAILABLE(ios(4.2))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIPrintInteractionController",
+      "superclass": "NSObject",
+      "header": "UIPrintInteractionController.h",
+      "availability": "API_AVAILABLE(ios(4.2))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIPrintPageRenderer",
+      "superclass": "NSObject",
+      "header": "UIPrintPageRenderer.h",
+      "availability": "API_AVAILABLE(ios(4.2))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIPrintPaper",
+      "superclass": "NSObject",
+      "header": "UIPrintPaper.h",
+      "availability": "API_AVAILABLE(ios(4.2))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIPrintServiceExtension",
+      "superclass": "NSObject",
+      "header": "UIPrintServiceExtension.h",
+      "availability": "API_AVAILABLE(ios(14.5))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIPrinter",
+      "superclass": "NSObject",
+      "header": "UIPrinter.h",
+      "availability": "API_AVAILABLE(ios(8.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIPrinterDestination",
+      "superclass": "NSObject",
+      "header": "UIPrintServiceExtension.h",
+      "availability": "API_AVAILABLE(ios(14.5))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIPrinterPickerController",
+      "superclass": "NSObject",
+      "header": "UIPrinterPickerController.h",
+      "availability": "API_AVAILABLE(ios(8.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIProgressView",
+      "superclass": "UIView",
+      "header": "UIProgressView.h",
+      "availability": "API_AVAILABLE(ios(2.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Views"
+    },
+    {
+      "name": "UIPushBehavior",
+      "superclass": "UIDynamicBehavior",
+      "header": "UIPushBehavior.h",
+      "availability": "API_AVAILABLE(ios(7.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIReferenceLibraryViewController",
+      "superclass": "UIViewController",
+      "header": "UIReferenceLibraryViewController.h",
+      "availability": "API_AVAILABLE(ios(5.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "View controllers"
+    },
+    {
+      "name": "UIRefreshControl",
+      "superclass": "UIControl",
+      "header": "UIRefreshControl.h",
+      "availability": "API_AVAILABLE(ios(6.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Controls"
+    },
+    {
+      "name": "UIRegion",
+      "superclass": "NSObject",
+      "header": "UIRegion.h",
+      "availability": "API_AVAILABLE(ios(9.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIResolvedShape",
+      "superclass": "NSObject",
+      "header": "UIShape.h",
+      "availability": "API_AVAILABLE(ios(17.0), visionos(1.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIResponder",
+      "superclass": "NSObject",
+      "header": "UIResponder.h",
+      "availability": "API_AVAILABLE(ios(2.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIRotationGestureRecognizer",
+      "superclass": "UIGestureRecognizer",
+      "header": "UIRotationGestureRecognizer.h",
+      "availability": "API_AVAILABLE(ios(3.2))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Gestures"
+    },
+    {
+      "name": "UIScene",
+      "superclass": "UIResponder",
+      "header": "UIScene.h",
+      "availability": "API_AVAILABLE(ios(13.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UISceneActivationConditions",
+      "superclass": "NSObject",
+      "header": "UISceneActivationConditions.h",
+      "availability": "API_AVAILABLE(ios(13.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UISceneActivationRequestOptions",
+      "superclass": "NSObject",
+      "header": "UISceneOptions.h",
+      "availability": "API_AVAILABLE(ios(13.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UISceneConfiguration",
+      "superclass": "NSObject",
+      "header": "UISceneConfiguration.h",
+      "availability": "API_AVAILABLE(ios(13.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UISceneConnectionOptions",
+      "superclass": "NSObject",
+      "header": "UISceneOptions.h",
+      "availability": "API_AVAILABLE(ios(13.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UISceneDestructionCondition",
+      "superclass": "NSObject",
+      "header": "UISceneDestructionCondition.h",
+      "availability": "API_AVAILABLE(ios(26.0), tvos(26.0), visionos(26.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UISceneDestructionRequestOptions",
+      "superclass": "NSObject",
+      "header": "UISceneOptions.h",
+      "availability": "API_AVAILABLE(ios(13.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UISceneOpenExternalURLOptions",
+      "superclass": "NSObject",
+      "header": "UISceneOptions.h",
+      "availability": "API_AVAILABLE(ios(13.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UISceneOpenURLOptions",
+      "superclass": "NSObject",
+      "header": "UISceneOptions.h",
+      "availability": "API_AVAILABLE(ios(13.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UISceneSession",
+      "superclass": "NSObject",
+      "header": "UISceneSession.h",
+      "availability": "API_AVAILABLE(ios(13.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UISceneSessionActivationRequest",
+      "superclass": "NSObject",
+      "header": "UISceneSessionActivationRequest.h",
+      "availability": "API_AVAILABLE(ios(17.0), tvos(17.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UISceneSizeRestrictions",
+      "superclass": "NSObject",
+      "header": "UISceneSizeRestrictions.h",
+      "availability": "API_AVAILABLE(ios(13.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UISceneSystemProtectionManager",
+      "superclass": "NSObject",
+      "header": "UISceneSystemProtectionManager.h",
+      "availability": "API_AVAILABLE(ios(18.0))\nAPI_UNAVAILABLE(visionos)\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UISceneWindowingBehaviors",
+      "superclass": "NSObject",
+      "header": "UISceneWindowingBehaviors.h",
+      "availability": "API_AVAILABLE(ios(16.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UISceneWindowingControlStyle",
+      "superclass": "NSObject",
+      "header": "UISceneWindowingControlStyle.h",
+      "availability": "API_AVAILABLE(ios(26.0), tvos(26.0), visionos(26.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIScreen",
+      "superclass": "NSObject",
+      "header": "UIScreen.h",
+      "availability": "API_AVAILABLE(ios(2.0))\nAPI_UNAVAILABLE(visionos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIScreenEdgePanGestureRecognizer",
+      "superclass": "UIPanGestureRecognizer",
+      "header": "UIScreenEdgePanGestureRecognizer.h",
+      "availability": "API_AVAILABLE(ios(7.0))\nAPI_UNAVAILABLE(tvos, visionos, watchos)",
+      "category": "Gestures"
+    },
+    {
+      "name": "UIScreenMode",
+      "superclass": "NSObject",
+      "header": "UIScreenMode.h",
+      "availability": "API_AVAILABLE(ios(3.2))\nAPI_UNAVAILABLE(visionos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIScreenshotService",
+      "superclass": "NSObject",
+      "header": "UIScreenshotService.h",
+      "availability": "API_AVAILABLE(ios(13.0))\nAPI_UNAVAILABLE(visionos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIScribbleInteraction",
+      "superclass": "NSObject",
+      "header": "UIScribbleInteraction.h",
+      "availability": "API_AVAILABLE(ios(14.0))\nAPI_UNAVAILABLE(visionos)\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIScrollEdgeEffect",
+      "superclass": "NSObject",
+      "header": "UIScrollView.h",
+      "availability": "API_AVAILABLE(ios(26.0), tvos(26.0), visionos(26.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIScrollEdgeEffectStyle",
+      "superclass": "NSObject",
+      "header": "UIScrollView.h",
+      "availability": "API_AVAILABLE(ios(26.0), tvos(26.0), visionos(26.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIScrollEdgeElementContainerInteraction",
+      "superclass": "NSObject",
+      "header": "UIScrollEdgeElementContainerInteraction.h",
+      "availability": "API_AVAILABLE(ios(26.0), tvos(26.0), visionos(26.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIScrollView",
+      "superclass": "UIView",
+      "header": "UIScrollView.h",
+      "availability": "API_AVAILABLE(ios(2.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Views"
+    },
+    {
+      "name": "UISearchBar",
+      "superclass": "UIView",
+      "header": "UISearchBar.h",
+      "availability": "API_AVAILABLE(ios(2.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Views"
+    },
+    {
+      "name": "UISearchContainerViewController",
+      "superclass": "UIViewController",
+      "header": "UISearchContainerViewController.h",
+      "availability": "UIKIT_CLASS_AVAILABLE_IOS_TVOS(9_1, 9_0)",
+      "category": "View controllers"
+    },
+    {
+      "name": "UISearchController",
+      "superclass": "UIViewController",
+      "header": "UISearchController.h",
+      "availability": "API_AVAILABLE(ios(8.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "View controllers"
+    },
+    {
+      "name": "UISearchDisplayController",
+      "superclass": "NSObject",
+      "header": "UISearchDisplayController.h",
+      "availability": "API_DEPRECATED(\"UISearchDisplayController has been replaced with UISearchController\", ios(3.0, 8.0))\nAPI_UNAVAILABLE(tvos)\nAPI_UNAVAILABLE(visionos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UISearchSuggestionItem",
+      "superclass": "NSObject",
+      "header": "UISearchSuggestion.h",
+      "availability": "UIKIT_CLASS_AVAILABLE_IOS_TVOS(16.0, 14.0)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UISearchTab",
+      "superclass": "UITab",
+      "header": "UISearchTab.h",
+      "availability": "API_AVAILABLE(ios(18.0), tvos(18.0), visionos(2.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UISearchTextField",
+      "superclass": "UITextField",
+      "header": "UISearchTextField.h",
+      "availability": "UIKIT_CLASS_AVAILABLE_IOS_ONLY(13.0)",
+      "category": "Controls"
+    },
+    {
+      "name": "UISearchToken",
+      "superclass": "NSObject",
+      "header": "UISearchTextField.h",
+      "availability": "UIKIT_CLASS_AVAILABLE_IOS_ONLY(13.0)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UISegmentedControl",
+      "superclass": "UIControl",
+      "header": "UISegmentedControl.h",
+      "availability": "API_AVAILABLE(ios(2.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Controls"
+    },
+    {
+      "name": "UISelectionFeedbackGenerator",
+      "superclass": "UIFeedbackGenerator",
+      "header": "UISelectionFeedbackGenerator.h",
+      "availability": "API_AVAILABLE(ios(10.0))\nAPI_UNAVAILABLE(visionos, tvos)\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIShadowProperties",
+      "superclass": "NSObject",
+      "header": "UIShadowProperties.h",
+      "availability": "API_AVAILABLE(ios(18.0), tvos(18.0), visionos(2.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIShape",
+      "superclass": "NSObject",
+      "header": "UIShape.h",
+      "availability": "API_AVAILABLE(ios(17.0), visionos(1.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIShapeResolutionContext",
+      "superclass": "NSObject",
+      "header": "UIShape.h",
+      "availability": "API_AVAILABLE(ios(17.0), visionos(1.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UISheetPresentationController",
+      "superclass": "UIPresentationController",
+      "header": "UISheetPresentationController.h",
+      "availability": "API_AVAILABLE(ios(15.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UISheetPresentationControllerDetent",
+      "superclass": "NSObject",
+      "header": "UISheetPresentationController.h",
+      "availability": "API_AVAILABLE(ios(15.0))\nAPI_UNAVAILABLE(tvos, watchos, visionos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UISimpleTextPrintFormatter",
+      "superclass": "UIPrintFormatter",
+      "header": "UIPrintFormatter.h",
+      "availability": "API_AVAILABLE(ios(4.2))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UISlider",
+      "superclass": "UIControl",
+      "header": "UISlider.h",
+      "availability": "API_AVAILABLE(ios(2.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Controls"
+    },
+    {
+      "name": "UISliderTick",
+      "superclass": "NSObject",
+      "header": "UISliderTrackConfiguration.h",
+      "availability": "API_AVAILABLE(ios(26.0), visionos(26.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UISliderTrackConfiguration",
+      "superclass": "NSObject",
+      "header": "UISliderTrackConfiguration.h",
+      "availability": "API_AVAILABLE(ios(26.0), visionos(26.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UISmartReplySuggestion",
+      "superclass": "UIInputSuggestion",
+      "header": "UISmartReplySuggestion.h",
+      "availability": "API_AVAILABLE(ios(18.4))\nAPI_UNAVAILABLE(tvos, watchos, visionos, macCatalyst)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UISnapBehavior",
+      "superclass": "UIDynamicBehavior",
+      "header": "UISnapBehavior.h",
+      "availability": "API_AVAILABLE(ios(7.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UISplitViewController",
+      "superclass": "UIViewController",
+      "header": "UISplitViewController.h",
+      "availability": "API_AVAILABLE(ios(3.2))\nAPI_UNAVAILABLE(watchos)",
+      "category": "View controllers"
+    },
+    {
+      "name": "UISpringLoadedInteraction",
+      "superclass": "NSObject",
+      "header": "UISpringLoadedInteraction.h",
+      "availability": "API_AVAILABLE(ios(11.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UISpringTimingParameters",
+      "superclass": "NSObject",
+      "header": "UITimingParameters.h",
+      "availability": "API_AVAILABLE(ios(10.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIStackView",
+      "superclass": "UIView",
+      "header": "UIStackView.h",
+      "availability": "API_AVAILABLE(ios(9.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Views"
+    },
+    {
+      "name": "UIStandardTextCursorView",
+      "superclass": "UIView",
+      "header": "UIStandardTextCursorView.h",
+      "availability": "API_AVAILABLE(ios(17.4))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Views"
+    },
+    {
+      "name": "UIStatusBarManager",
+      "superclass": "NSObject",
+      "header": "UIStatusBarManager.h",
+      "availability": "API_AVAILABLE(ios(13.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIStepper",
+      "superclass": "UIControl",
+      "header": "UIStepper.h",
+      "availability": "API_AVAILABLE(ios(5.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Controls"
+    },
+    {
+      "name": "UIStoryboard",
+      "superclass": "NSObject",
+      "header": "UIStoryboard.h",
+      "availability": "API_AVAILABLE(ios(5.0))\nAPI_UNAVAILABLE(watchos)\nAPI_DEPRECATED(\"Loading Interface Builder products will not be supported in a future version of visionOS.\", visionos(1.0, 1.0))",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIStoryboardPopoverSegue",
+      "superclass": "UIStoryboardSegue",
+      "header": "UIStoryboardPopoverSegue.h",
+      "availability": "API_DEPRECATED(\"Access destinationViewController.popoverPresentationController from your segue's performHandler or override of -perform\", ios(5.0, 9.0))\nAPI_UNAVAILABLE(visionos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIStoryboardSegue",
+      "superclass": "NSObject",
+      "header": "UIStoryboardSegue.h",
+      "availability": "API_AVAILABLE(ios(5.0))\nAPI_UNAVAILABLE(watchos)\nAPI_DEPRECATED(\"Loading Interface Builder products will not be supported in a future version of visionOS.\", visionos(1.0, 1.0))",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIStoryboardUnwindSegueSource",
+      "superclass": "NSObject",
+      "header": "UIStoryboardSegue.h",
+      "availability": "API_AVAILABLE(ios(9.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UISwipeActionsConfiguration",
+      "superclass": "NSObject",
+      "header": "UISwipeActionsConfiguration.h",
+      "availability": "API_AVAILABLE(ios(11.0))\nAPI_UNAVAILABLE(watchos)\nAPI_UNAVAILABLE(tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UISwipeGestureRecognizer",
+      "superclass": "UIGestureRecognizer",
+      "header": "UISwipeGestureRecognizer.h",
+      "availability": "API_AVAILABLE(ios(3.2))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Gestures"
+    },
+    {
+      "name": "UISwitch",
+      "superclass": "UIControl",
+      "header": "UISwitch.h",
+      "availability": "API_AVAILABLE(ios(2.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Controls"
+    },
+    {
+      "name": "UISymbolContentTransition",
+      "superclass": "NSObject",
+      "header": "UISymbolContentTransition.h",
+      "availability": "API_AVAILABLE(ios(26.0), tvos(26.0), visionos(26.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UISymbolEffectCompletionContext",
+      "superclass": "NSObject",
+      "header": "UISymbolEffectCompletion.h",
+      "availability": "API_AVAILABLE(ios(17.0), tvos(17.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITab",
+      "superclass": "NSObject",
+      "header": "UITab.h",
+      "availability": "API_AVAILABLE(ios(18.0), tvos(18.0), visionos(2.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITabAccessory",
+      "superclass": "NSObject",
+      "header": "UITabAccessory.h",
+      "availability": "API_AVAILABLE(ios(26.0))\nAPI_UNAVAILABLE(visionos, tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITabBar",
+      "superclass": "UIView",
+      "header": "UITabBar.h",
+      "availability": "API_AVAILABLE(ios(2.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Views"
+    },
+    {
+      "name": "UITabBarAppearance",
+      "superclass": "UIBarAppearance",
+      "header": "UITabBarAppearance.h",
+      "availability": "API_AVAILABLE(ios(13.0), tvos(13.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITabBarController",
+      "superclass": "UIViewController",
+      "header": "UITabBarController.h",
+      "availability": "API_AVAILABLE(ios(2.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "View controllers"
+    },
+    {
+      "name": "UITabBarControllerSidebar",
+      "superclass": "NSObject",
+      "header": "UITabBarControllerSidebar.h",
+      "availability": "API_AVAILABLE(ios(18.0), visionos(2.0))\nAPI_UNAVAILABLE(tvos)\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITabBarItem",
+      "superclass": "UIBarItem",
+      "header": "UITabBarItem.h",
+      "availability": "API_AVAILABLE(ios(2.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITabBarItemAppearance",
+      "superclass": "NSObject",
+      "header": "UITabBarAppearance.h",
+      "availability": "API_AVAILABLE(ios(13.0), tvos(13.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITabBarItemStateAppearance",
+      "superclass": "NSObject",
+      "header": "UITabBarAppearance.h",
+      "availability": "API_AVAILABLE(ios(13.0), tvos(13.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITabGroup",
+      "superclass": "UITab",
+      "header": "UITabGroup.h",
+      "availability": "API_AVAILABLE(ios(18.0), tvos(18.0), visionos(2.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITabSidebarItem",
+      "superclass": "NSObject",
+      "header": "UITabSidebarItem.h",
+      "availability": "API_AVAILABLE(ios(18.0), visionos(2.0))\nAPI_UNAVAILABLE(tvos)\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITabSidebarItemRequest",
+      "superclass": "NSObject",
+      "header": "UITabSidebarItem.h",
+      "availability": "API_AVAILABLE(ios(18.0), visionos(2.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITabSidebarScrollTarget",
+      "superclass": "NSObject",
+      "header": "UITabBarControllerSidebar.h",
+      "availability": "API_AVAILABLE(ios(18.0), visionos(2.0))\nAPI_UNAVAILABLE(tvos)\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITableView",
+      "superclass": "UIScrollView",
+      "header": "UITableView.h",
+      "availability": "API_AVAILABLE(ios(2.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Views"
+    },
+    {
+      "name": "UITableViewCell",
+      "superclass": "UIView",
+      "header": "UITableViewCell.h",
+      "availability": "API_AVAILABLE(ios(2.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Views"
+    },
+    {
+      "name": "UITableViewController",
+      "superclass": "UIViewController",
+      "header": "UITableViewController.h",
+      "availability": "API_AVAILABLE(ios(2.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "View controllers"
+    },
+    {
+      "name": "UITableViewDiffableDataSource",
+      "superclass": "NSObject",
+      "header": "UIDiffableDataSource.h",
+      "availability": "API_AVAILABLE(ios(13.0), tvos(13.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITableViewDropPlaceholder",
+      "superclass": "UITableViewPlaceholder",
+      "header": "UITableView.h",
+      "availability": "API_AVAILABLE(ios(11.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITableViewDropProposal",
+      "superclass": "UIDropProposal",
+      "header": "UITableView.h",
+      "availability": "API_AVAILABLE(ios(11.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITableViewFocusUpdateContext",
+      "superclass": "UIFocusUpdateContext",
+      "header": "UITableView.h",
+      "availability": "API_AVAILABLE(ios(9.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITableViewHeaderFooterView",
+      "superclass": "UIView",
+      "header": "UITableViewHeaderFooterView.h",
+      "availability": "API_AVAILABLE(ios(6.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Views"
+    },
+    {
+      "name": "UITableViewPlaceholder",
+      "superclass": "NSObject",
+      "header": "UITableView.h",
+      "availability": "API_AVAILABLE(ios(11.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITableViewRowAction",
+      "superclass": "NSObject",
+      "header": "UITableView.h",
+      "availability": "API_DEPRECATED(\"Use UIContextualAction and related APIs instead.\", ios(8.0, 13.0))\nAPI_UNAVAILABLE(tvos)\nAPI_UNAVAILABLE(visionos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITapGestureRecognizer",
+      "superclass": "UIGestureRecognizer",
+      "header": "UITapGestureRecognizer.h",
+      "availability": "API_AVAILABLE(ios(3.2))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Gestures"
+    },
+    {
+      "name": "UITargetedDragPreview",
+      "superclass": "UITargetedPreview",
+      "header": "UITargetedDragPreview.h",
+      "availability": "API_AVAILABLE(ios(11.0))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITargetedPreview",
+      "superclass": "NSObject",
+      "header": "UITargetedPreview.h",
+      "availability": "API_AVAILABLE(ios(13.0), tvos(17.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITextChecker",
+      "superclass": "NSObject",
+      "header": "UITextChecker.h",
+      "availability": "API_AVAILABLE(ios(3.2))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITextCursorDropPositionAnimator",
+      "superclass": "NSObject",
+      "header": "UITextCursorDropPositionAnimator.h",
+      "availability": "API_AVAILABLE(ios(17.4))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITextDragPreviewRenderer",
+      "superclass": "NSObject",
+      "header": "UITextDragPreviewRenderer.h",
+      "availability": "API_AVAILABLE(ios(11.0))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITextDropProposal",
+      "superclass": "UIDropProposal",
+      "header": "UITextDropProposal.h",
+      "availability": "API_AVAILABLE(ios(11.0))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITextField",
+      "superclass": "UIControl",
+      "header": "UITextField.h",
+      "availability": "API_AVAILABLE(ios(2.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Controls"
+    },
+    {
+      "name": "UITextFormattingCoordinator",
+      "superclass": "NSObject",
+      "header": "UITextFormattingCoordinator.h",
+      "availability": "API_AVAILABLE(ios(13.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITextFormattingViewController",
+      "superclass": "UIViewController",
+      "header": "UITextFormattingViewController.h",
+      "availability": "API_AVAILABLE(ios(18.0), visionos(26.0))\nAPI_UNAVAILABLE(macCatalyst)\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "View controllers"
+    },
+    {
+      "name": "UITextFormattingViewControllerChangeValue",
+      "superclass": "NSObject",
+      "header": "UITextFormattingViewControllerChangeValue.h",
+      "availability": "API_AVAILABLE(ios(18.0), visionos(26.0))\nAPI_UNAVAILABLE(macCatalyst)\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITextFormattingViewControllerComponent",
+      "superclass": "NSObject",
+      "header": "UITextFormattingViewControllerComponent.h",
+      "availability": "API_AVAILABLE(ios(18.0), visionos(26.0))\nAPI_UNAVAILABLE(macCatalyst)\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITextFormattingViewControllerComponentGroup",
+      "superclass": "NSObject",
+      "header": "UITextFormattingViewControllerComponent.h",
+      "availability": "API_AVAILABLE(ios(18.0), visionos(26.0))\nAPI_UNAVAILABLE(macCatalyst)\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITextFormattingViewControllerConfiguration",
+      "superclass": "NSObject",
+      "header": "UITextFormattingViewControllerConfiguration.h",
+      "availability": "API_AVAILABLE(ios(18.0), visionos(26.0))\nAPI_UNAVAILABLE(macCatalyst)\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITextFormattingViewControllerFormattingDescriptor",
+      "superclass": "NSObject",
+      "header": "UITextFormattingViewControllerFormattingDescriptor.h",
+      "availability": "API_AVAILABLE(ios(18.0), visionos(26.0))\nAPI_UNAVAILABLE(macCatalyst)\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITextFormattingViewControllerFormattingStyle",
+      "superclass": "NSObject",
+      "header": "UITextFormattingViewControllerFormattingStyle.h",
+      "availability": "API_AVAILABLE(ios(18.0), visionos(26.0))\nAPI_UNAVAILABLE(macCatalyst)\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITextInputAssistantItem",
+      "superclass": "NSObject",
+      "header": "UITextInput.h",
+      "availability": "API_AVAILABLE(ios(9.0), visionos(2.0))\nAPI_UNAVAILABLE(tvos)\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITextInputContext",
+      "superclass": "NSObject",
+      "header": "UITextInputContext.h",
+      "availability": "API_AVAILABLE(ios(16.4))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITextInputMode",
+      "superclass": "NSObject",
+      "header": "UITextInput.h",
+      "availability": "API_AVAILABLE(ios(4.2))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITextInputPasswordRules",
+      "superclass": "NSObject",
+      "header": "UITextInputTraits.h",
+      "availability": "API_AVAILABLE(ios(12.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITextInputStringTokenizer",
+      "superclass": "NSObject",
+      "header": "UITextInput.h",
+      "availability": "API_AVAILABLE(ios(3.2))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITextInteraction",
+      "superclass": "NSObject",
+      "header": "UITextInteraction.h",
+      "availability": "API_AVAILABLE(ios(13.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITextItem",
+      "superclass": "NSObject",
+      "header": "UITextItem.h",
+      "availability": "API_AVAILABLE(ios(17.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITextItemMenuConfiguration",
+      "superclass": "NSObject",
+      "header": "UITextItem.h",
+      "availability": "API_AVAILABLE(ios(17.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITextItemMenuPreview",
+      "superclass": "NSObject",
+      "header": "UITextItem.h",
+      "availability": "API_AVAILABLE(ios(17.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITextLoupeSession",
+      "superclass": "NSObject",
+      "header": "UITextLoupeSession.h",
+      "availability": "API_AVAILABLE(ios(17.0))\nAPI_UNAVAILABLE(visionos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITextPlaceholder",
+      "superclass": "NSObject",
+      "header": "UITextInput.h",
+      "availability": "API_AVAILABLE(ios(13.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITextPosition",
+      "superclass": "NSObject",
+      "header": "UITextInput.h",
+      "availability": "API_AVAILABLE(ios(3.2))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITextRange",
+      "superclass": "NSObject",
+      "header": "UITextInput.h",
+      "availability": "API_AVAILABLE(ios(3.2))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITextSearchOptions",
+      "superclass": "NSObject",
+      "header": "UIFindSession.h",
+      "availability": "API_AVAILABLE(ios(16.0))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITextSearchingFindSession",
+      "superclass": "UIFindSession",
+      "header": "UIFindSession.h",
+      "availability": "API_AVAILABLE(ios(16.0))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITextSelectionDisplayInteraction",
+      "superclass": "NSObject",
+      "header": "UITextSelectionDisplayInteraction.h",
+      "availability": "API_AVAILABLE(ios(17.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITextSelectionRect",
+      "superclass": "NSObject",
+      "header": "UITextInput.h",
+      "availability": "API_AVAILABLE(ios(6.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITextView",
+      "superclass": "UIScrollView",
+      "header": "UITextView.h",
+      "availability": "API_AVAILABLE(ios(2.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Views"
+    },
+    {
+      "name": "UITitlebar",
+      "superclass": "NSObject",
+      "header": "NSToolbar+UIKitAdditions.h",
+      "availability": "API_AVAILABLE(macCatalyst(13.0))",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIToolTipConfiguration",
+      "superclass": "NSObject",
+      "header": "UIToolTipInteraction.h",
+      "availability": "API_AVAILABLE(ios(15.0))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIToolTipInteraction",
+      "superclass": "NSObject",
+      "header": "UIToolTipInteraction.h",
+      "availability": "API_AVAILABLE(ios(15.0))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIToolbar",
+      "superclass": "UIView",
+      "header": "UIToolbar.h",
+      "availability": "API_AVAILABLE(ios(2.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Views"
+    },
+    {
+      "name": "UIToolbarAppearance",
+      "superclass": "UIBarAppearance",
+      "header": "UIToolbarAppearance.h",
+      "availability": "API_AVAILABLE(ios(13.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITouch",
+      "superclass": "NSObject",
+      "header": "UITouch.h",
+      "availability": "API_AVAILABLE(ios(2.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITrackingLayoutGuide",
+      "superclass": "UILayoutGuide",
+      "header": "UITrackingLayoutGuide.h",
+      "availability": "API_AVAILABLE(ios(15.0))\nAPI_UNAVAILABLE(tvos)\nAPI_UNAVAILABLE(watchos)",
+      "category": "Layout"
+    },
+    {
+      "name": "UITraitAccessibilityContrast",
+      "superclass": "NSObject",
+      "header": "UITrait.h",
+      "availability": "API_AVAILABLE(ios(17.0), tvos(17.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITraitActiveAppearance",
+      "superclass": "NSObject",
+      "header": "UITrait.h",
+      "availability": "API_AVAILABLE(ios(17.0), tvos(17.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITraitCollection",
+      "superclass": "NSObject",
+      "header": "UITraitCollection.h",
+      "availability": "API_AVAILABLE(ios(8.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITraitDisplayGamut",
+      "superclass": "NSObject",
+      "header": "UITrait.h",
+      "availability": "API_AVAILABLE(ios(17.0), tvos(17.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITraitDisplayScale",
+      "superclass": "NSObject",
+      "header": "UITrait.h",
+      "availability": "API_AVAILABLE(ios(17.0), tvos(17.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITraitForceTouchCapability",
+      "superclass": "NSObject",
+      "header": "UITrait.h",
+      "availability": "API_AVAILABLE(ios(17.0), tvos(17.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITraitHDRHeadroomUsageLimit",
+      "superclass": "NSObject",
+      "header": "UITrait.h",
+      "availability": "API_AVAILABLE(ios(26.0), tvos(26.0), visionos(26.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITraitHorizontalSizeClass",
+      "superclass": "NSObject",
+      "header": "UITrait.h",
+      "availability": "API_AVAILABLE(ios(17.0), tvos(17.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITraitImageDynamicRange",
+      "superclass": "NSObject",
+      "header": "UITrait.h",
+      "availability": "API_AVAILABLE(ios(17.0), tvos(17.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITraitLayoutDirection",
+      "superclass": "NSObject",
+      "header": "UITrait.h",
+      "availability": "API_AVAILABLE(ios(17.0), tvos(17.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITraitLegibilityWeight",
+      "superclass": "NSObject",
+      "header": "UITrait.h",
+      "availability": "API_AVAILABLE(ios(17.0), tvos(17.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITraitListEnvironment",
+      "superclass": "NSObject",
+      "header": "UITraitListEnvironment.h",
+      "availability": "API_AVAILABLE(ios(18.0), tvos(18.0), visionos(2.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITraitPreferredContentSizeCategory",
+      "superclass": "NSObject",
+      "header": "UITrait.h",
+      "availability": "API_AVAILABLE(ios(17.0), tvos(17.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITraitResolvesNaturalAlignmentWithBaseWritingDirection",
+      "superclass": "NSObject",
+      "header": "UITrait.h",
+      "availability": "API_AVAILABLE(ios(26.0), tvos(26.0), visionos(26.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITraitSceneCaptureState",
+      "superclass": "NSObject",
+      "header": "UITrait.h",
+      "availability": "API_AVAILABLE(ios(17.0), tvos(17.0), visionos(1.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITraitSplitViewControllerLayoutEnvironment",
+      "superclass": "NSObject",
+      "header": "UISplitViewControllerLayoutEnvironment.h",
+      "availability": "API_AVAILABLE(ios(26.0), tvos(26.0), visionos(26.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITraitTabAccessoryEnvironment",
+      "superclass": "NSObject",
+      "header": "UITabAccessory.h",
+      "availability": "API_AVAILABLE(ios(26.0))\nAPI_UNAVAILABLE(visionos, tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITraitToolbarItemPresentationSize",
+      "superclass": "NSObject",
+      "header": "UITrait.h",
+      "availability": "API_AVAILABLE(ios(17.0), tvos(17.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITraitTypesettingLanguage",
+      "superclass": "NSObject",
+      "header": "UITrait.h",
+      "availability": "API_AVAILABLE(ios(17.0), tvos(17.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITraitUserInterfaceIdiom",
+      "superclass": "NSObject",
+      "header": "UITrait.h",
+      "availability": "API_AVAILABLE(ios(17.0), tvos(17.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITraitUserInterfaceLevel",
+      "superclass": "NSObject",
+      "header": "UITrait.h",
+      "availability": "API_AVAILABLE(ios(17.0), tvos(17.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITraitUserInterfaceStyle",
+      "superclass": "NSObject",
+      "header": "UITrait.h",
+      "availability": "API_AVAILABLE(ios(17.0), tvos(17.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UITraitVerticalSizeClass",
+      "superclass": "NSObject",
+      "header": "UITrait.h",
+      "availability": "API_AVAILABLE(ios(17.0), tvos(17.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIUpdateActionPhase",
+      "superclass": "NSObject",
+      "header": "UIUpdateActionPhase.h",
+      "availability": "API_AVAILABLE(ios(18.0), tvos(18.0), visionos(2.0))\nAPI_UNAVAILABLE(watchos, macCatalyst)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIUpdateInfo",
+      "superclass": "NSObject",
+      "header": "UIUpdateInfo.h",
+      "availability": "API_AVAILABLE(ios(18.0), tvos(18.0), visionos(2.0))\nAPI_UNAVAILABLE(watchos, macCatalyst)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIUpdateLink",
+      "superclass": "NSObject",
+      "header": "UIUpdateLink.h",
+      "availability": "API_AVAILABLE(ios(18.0), tvos(18.0), visionos(2.0))\nAPI_UNAVAILABLE(watchos, macCatalyst)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIUserNotificationAction",
+      "superclass": "NSObject",
+      "header": "UIUserNotificationSettings.h",
+      "availability": "API_DEPRECATED(\"Use UserNotifications Framework's UNNotificationAction\", ios(8.0, 10.0))\nAPI_UNAVAILABLE(tvos)\nAPI_UNAVAILABLE(visionos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIUserNotificationCategory",
+      "superclass": "NSObject",
+      "header": "UIUserNotificationSettings.h",
+      "availability": "API_DEPRECATED(\"Use UserNotifications Framework's UNNotificationCategory\", ios(8.0, 10.0))\nAPI_UNAVAILABLE(tvos)\nAPI_UNAVAILABLE(visionos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIUserNotificationSettings",
+      "superclass": "NSObject",
+      "header": "UIUserNotificationSettings.h",
+      "availability": "API_DEPRECATED(\"Use UserNotifications Framework's UNNotificationSettings\", ios(8.0, 10.0))\nAPI_UNAVAILABLE(tvos)\nAPI_UNAVAILABLE(visionos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIVibrancyEffect",
+      "superclass": "UIVisualEffect",
+      "header": "UIVibrancyEffect.h",
+      "availability": "API_AVAILABLE(ios(8.0), tvos(9.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIVideoEditorController",
+      "superclass": "UINavigationController",
+      "header": "UIVideoEditorController.h",
+      "availability": "API_AVAILABLE(ios(3.1))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "View controllers"
+    },
+    {
+      "name": "UIView",
+      "superclass": "UIResponder",
+      "header": "UIView.h",
+      "availability": "API_AVAILABLE(ios(2.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Views"
+    },
+    {
+      "name": "UIViewConfigurationState",
+      "superclass": "NSObject",
+      "header": "UIViewConfigurationState.h",
+      "availability": "API_AVAILABLE(ios(14.0), tvos(14.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIViewController",
+      "superclass": "UIResponder",
+      "header": "UIViewController.h",
+      "availability": "API_AVAILABLE(ios(2.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "View controllers"
+    },
+    {
+      "name": "UIViewControllerTransition",
+      "superclass": "NSObject",
+      "header": "UIViewControllerTransition.h",
+      "availability": "API_AVAILABLE(ios(18.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIViewLayoutRegion",
+      "superclass": "NSObject",
+      "header": "UIViewLayoutRegion.h",
+      "availability": "API_AVAILABLE(ios(26.0), tvos(26.0), visionos(26.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIViewPrintFormatter",
+      "superclass": "UIPrintFormatter",
+      "header": "UIPrintFormatter.h",
+      "availability": "API_AVAILABLE(ios(4.2))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIViewPropertyAnimator",
+      "superclass": "NSObject",
+      "header": "UIViewPropertyAnimator.h",
+      "availability": "API_AVAILABLE(ios(10.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIVisualEffect",
+      "superclass": "NSObject",
+      "header": "UIVisualEffect.h",
+      "availability": "API_AVAILABLE(ios(8.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIVisualEffectView",
+      "superclass": "UIView",
+      "header": "UIVisualEffectView.h",
+      "availability": "API_AVAILABLE(ios(8.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Views"
+    },
+    {
+      "name": "UIWebView",
+      "superclass": "UIView",
+      "header": "UIWebView.h",
+      "availability": "API_DEPRECATED(\"No longer supported; please adopt WKWebView.\", ios(2.0, 12.0))\nAPI_UNAVAILABLE(tvos, macos, macCatalyst)\nAPI_UNAVAILABLE(visionos, watchos)",
+      "category": "Views"
+    },
+    {
+      "name": "UIWindow",
+      "superclass": "UIView",
+      "header": "UIWindow.h",
+      "availability": "API_AVAILABLE(ios(2.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Views"
+    },
+    {
+      "name": "UIWindowScene",
+      "superclass": "UIScene",
+      "header": "UIWindowScene.h",
+      "availability": "API_AVAILABLE(ios(13.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIWindowSceneActivationAction",
+      "superclass": "UIAction",
+      "header": "UIWindowSceneActivationAction.h",
+      "availability": "API_AVAILABLE(ios(15.0))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIWindowSceneActivationConfiguration",
+      "superclass": "NSObject",
+      "header": "UIWindowSceneActivationConfiguration.h",
+      "availability": "API_AVAILABLE(ios(15.0))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIWindowSceneActivationInteraction",
+      "superclass": "NSObject",
+      "header": "UIWindowSceneActivationInteraction.h",
+      "availability": "API_AVAILABLE(ios(15.0))\nAPI_UNAVAILABLE(watchos, tvos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIWindowSceneActivationRequestOptions",
+      "superclass": "UISceneActivationRequestOptions",
+      "header": "UIWindowSceneActivationRequestOptions.h",
+      "availability": "API_AVAILABLE(ios(15.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIWindowSceneDestructionRequestOptions",
+      "superclass": "UISceneDestructionRequestOptions",
+      "header": "UIWindowScene.h",
+      "availability": "API_AVAILABLE(ios(13.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIWindowSceneDragInteraction",
+      "superclass": "NSObject",
+      "header": "UIWindowSceneDragInteraction.h",
+      "availability": "API_AVAILABLE(ios(17.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIWindowSceneGeometry",
+      "superclass": "NSObject",
+      "header": "UIWindowSceneGeometry.h",
+      "availability": "API_AVAILABLE(ios(16.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIWindowSceneGeometryPreferences",
+      "superclass": "NSObject",
+      "header": "UIWindowSceneGeometryPreferences.h",
+      "availability": "API_AVAILABLE(ios(16.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIWindowSceneGeometryPreferencesIOS",
+      "superclass": "UIWindowSceneGeometryPreferences",
+      "header": "UIWindowSceneGeometryPreferencesIOS.h",
+      "availability": "API_AVAILABLE(ios(16.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIWindowSceneGeometryPreferencesMac",
+      "superclass": "UIWindowSceneGeometryPreferences",
+      "header": "UIWindowSceneGeometryPreferencesMac.h",
+      "availability": "API_AVAILABLE(macCatalyst(16.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIWindowSceneGeometryPreferencesVision",
+      "superclass": "UIWindowSceneGeometryPreferences",
+      "header": "UIWindowSceneGeometryPreferencesVision.h",
+      "availability": "API_AVAILABLE(visionos(1.0))\nAPI_UNAVAILABLE(ios, tvos, macos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIWindowScenePlacement",
+      "superclass": "NSObject",
+      "header": "UIWindowScenePlacement.h",
+      "availability": "API_AVAILABLE(ios(17.0), tvos(17.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIWindowSceneProminentPlacement",
+      "superclass": "UIWindowScenePlacement",
+      "header": "UIWindowSceneProminentPlacement.h",
+      "availability": "API_AVAILABLE(ios(17.0))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIWindowScenePushPlacement",
+      "superclass": "UIWindowScenePlacement",
+      "header": "UIWindowScenePushPlacement.h",
+      "availability": "API_AVAILABLE(visionos(2.0))\nAPI_UNAVAILABLE(ios, watchos, tvos, macCatalyst)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIWindowSceneReplacePlacement",
+      "superclass": "UIWindowScenePlacement",
+      "header": "UIWindowSceneReplacePlacement.h",
+      "availability": "API_DEPRECATED(\"UIWindowSceneReplacePlacement has been replaced with UIWindowScenePushPlacement\", visionos(2.0, 2.0))\nAPI_UNAVAILABLE(ios, watchos, tvos, macCatalyst)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIWindowSceneStandardPlacement",
+      "superclass": "UIWindowScenePlacement",
+      "header": "UIWindowSceneStandardPlacement.h",
+      "availability": "API_AVAILABLE(ios(17.0), tvos(17.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIWritingToolsCoordinator",
+      "superclass": "NSObject",
+      "header": "UIWritingToolsCoordinator.h",
+      "availability": "API_AVAILABLE(ios(18.2), visionos(2.4))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIWritingToolsCoordinatorAnimationParameters",
+      "superclass": "NSObject",
+      "header": "UIWritingToolsCoordinatorAnimationParameters.h",
+      "availability": "API_AVAILABLE(ios(18.2), visionos(2.4))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIWritingToolsCoordinatorContext",
+      "superclass": "NSObject",
+      "header": "UIWritingToolsCoordinatorContext.h",
+      "availability": "API_AVAILABLE(ios(18.2), visionos(2.4))\nAPI_UNAVAILABLE(tvos, watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIZoomTransitionAlignmentRectContext",
+      "superclass": "NSObject",
+      "header": "UIZoomTransitionOptions.h",
+      "availability": "API_AVAILABLE(ios(18.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIZoomTransitionInteractionContext",
+      "superclass": "NSObject",
+      "header": "UIZoomTransitionOptions.h",
+      "availability": "API_AVAILABLE(ios(18.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIZoomTransitionOptions",
+      "superclass": "NSObject",
+      "header": "UIZoomTransitionOptions.h",
+      "availability": "API_AVAILABLE(ios(18.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    },
+    {
+      "name": "UIZoomTransitionSourceViewProviderContext",
+      "superclass": "NSObject",
+      "header": "UIViewControllerTransition.h",
+      "availability": "API_AVAILABLE(ios(18.0))\nAPI_UNAVAILABLE(watchos)",
+      "category": "Supporting objects"
+    }
+  ]
+}

@@ -1,5 +1,7 @@
 #import <XCTest/XCTest.h>
 #import "BasicViewController.h"
+#import "UIKitCatalogViewController.h"
+#import "UIKitDemoViewController.h"
 
 @interface BasicViewControllerTests : XCTestCase {
 @private
@@ -326,6 +328,139 @@
         XCTAssertGreaterThan(scroll.contentOffset.y, 0);
         XCTAssertTrue(CGRectContainsRect(scroll.bounds, buttonRect));
         [scroll setContentOffset:CGPointZero animated:NO];
+    }
+}
+
+
+- (UIView *)findViewWithIdentifier:(NSString *)identifier inView:(UIView *)view {
+    if ([view.accessibilityIdentifier isEqualToString:identifier]) return view;
+    for (UIView *child in view.subviews) {
+        UIView *found = [self findViewWithIdentifier:identifier inView:child];
+        if (found) return found;
+    }
+    return nil;
+}
+
+- (void)testCatalogSearchAndScope {
+    UIKitCatalogViewController *catalog = [[[UIKitCatalogViewController alloc] init] autorelease];
+    [catalog loadViewIfNeeded];
+    XCTAssertGreaterThan(catalog.entries.count, 500);
+    XCTAssertEqual(catalog.filteredEntries.count, [UIKitDemoViewController liveClassNames].count);
+    [catalog filterWithQuery:@"  uibutton  " liveOnly:NO];
+    XCTAssertGreaterThan(catalog.filteredEntries.count, 0);
+    XCTAssertEqualObjects([[catalog.filteredEntries firstObject] objectForKey:@"name"], @"UIButton");
+    [catalog filterWithQuery:@"Gestures" liveOnly:YES];
+    XCTAssertEqual(catalog.filteredEntries.count, 6);
+    [catalog filterWithQuery:@"not-a-uikit-class" liveOnly:NO];
+    XCTAssertEqual(catalog.filteredEntries.count, 0);
+    XCTAssertNotNil(catalog.tableView.backgroundView);
+    [catalog filterWithQuery:@"" liveOnly:NO];
+    XCTAssertEqual(catalog.filteredEntries.count, catalog.entries.count);
+    XCTAssertNil(catalog.tableView.backgroundView);
+    NSMutableSet *names = [NSMutableSet set];
+    for (NSDictionary *entry in catalog.entries) {
+        XCTAssertGreaterThan([[entry objectForKey:@"superclass"] length], 0);
+        XCTAssertGreaterThan([[entry objectForKey:@"header"] length], 0);
+        [names addObject:[entry objectForKey:@"name"]];
+    }
+    XCTAssertEqual(names.count, catalog.entries.count);
+}
+
+- (void)testEveryLiveWidgetLoadsAndFitsNarrowAndLandscapeLayouts {
+    UIKitCatalogViewController *catalog = [[[UIKitCatalogViewController alloc] init] autorelease];
+    [catalog loadViewIfNeeded];
+    for (NSDictionary *entry in catalog.filteredEntries) {
+        UIKitDemoViewController *demo = [[UIKitDemoViewController alloc] initWithEntry:entry];
+        [demo loadViewIfNeeded];
+        for (NSValue *size in [NSArray arrayWithObjects:[NSValue valueWithCGSize:CGSizeMake(320, 568)],
+                [NSValue valueWithCGSize:CGSizeMake(852, 393)], nil]) {
+            demo.view.frame = (CGRect){CGPointZero, size.CGSizeValue};
+            [demo.view layoutIfNeeded];
+            UIView *sample = [self findViewWithIdentifier:@"liveSample" inView:demo.view];
+            if (@available(iOS 16.0, *)) {
+                XCTAssertNotNil(sample, @"%@", [entry objectForKey:@"name"]);
+            } else if ([[entry objectForKey:@"name"] isEqualToString:@"UICalendarView"]) {
+                UILabel *feedback = (UILabel *)[self findViewWithIdentifier:@"demoFeedback" inView:demo.view];
+                XCTAssertEqualObjects(feedback.text, @"UICalendarView requires iOS 16 or later.");
+                continue;
+            } else XCTAssertNotNil(sample, @"%@", [entry objectForKey:@"name"]);
+            XCTAssertFalse(sample.hasAmbiguousLayout, @"%@", demo.title);
+            XCTAssertGreaterThan(sample.bounds.size.height, 0, @"%@", demo.title);
+            CGRect rect = [sample convertRect:sample.bounds toView:demo.view];
+            XCTAssertGreaterThanOrEqual(CGRectGetMinX(rect), 0, @"%@", demo.title);
+            XCTAssertLessThanOrEqual(CGRectGetMaxX(rect), demo.view.bounds.size.width, @"%@", demo.title);
+        }
+        [demo release];
+    }
+}
+
+- (void)testLiveProgressControlUpdatesPreview {
+    NSDictionary *entry = [NSDictionary dictionaryWithObjectsAndKeys:@"UIProgressView", @"name", @"UIView", @"superclass", @"UIProgressView.h", @"header", @"Views", @"category", nil];
+    UIKitDemoViewController *demo = [[[UIKitDemoViewController alloc] initWithEntry:entry] autorelease];
+    [demo loadViewIfNeeded];
+    UIProgressView *progress = (UIProgressView *)[self findViewWithIdentifier:@"liveSample" inView:demo.view];
+    UISlider *slider = nil;
+    for (UIView *view in progress.superview.subviews) if ([view isKindOfClass:[UISlider class]]) slider = (UISlider *)view;
+    XCTAssertNotNil(slider);
+    slider.value = 0.8;
+    [slider sendActionsForControlEvents:UIControlEventValueChanged];
+    XCTAssertEqualWithAccuracy(progress.progress, 0.8, 0.001);
+    UILabel *feedback = (UILabel *)[self findViewWithIdentifier:@"demoFeedback" inView:demo.view];
+    XCTAssertEqualObjects(feedback.text, @"Progress: 80%");
+}
+
+- (void)testReferenceCardDoesNotInstantiateItsClass {
+    NSDictionary *entry = [NSDictionary dictionaryWithObjectsAndKeys:@"UIApplication", @"name", @"UIResponder", @"superclass", @"UIApplication.h", @"header", @"Supporting objects", @"category", nil];
+    UIKitDemoViewController *demo = [[[UIKitDemoViewController alloc] initWithEntry:entry] autorelease];
+    [demo loadViewIfNeeded];
+    XCTAssertNil([self findViewWithIdentifier:@"liveSample" inView:demo.view]);
+    UILabel *feedback = (UILabel *)[self findViewWithIdentifier:@"demoFeedback" inView:demo.view];
+    XCTAssertTrue([feedback.text hasPrefix:@"Reference object."]);
+}
+
+- (void)testWidgetsButtonOpensCatalog {
+    [self hostControllerInWindow];
+    UIBarButtonItem *button = self.controller.navigationItem.rightBarButtonItem;
+    XCTAssertEqualObjects(button.title, @"Widgets");
+    [[UIApplication sharedApplication] sendAction:button.action to:button.target from:button forEvent:nil];
+    NSPredicate *finished = [NSPredicate predicateWithFormat:@"transitionCoordinator == nil"];
+    [self expectationForPredicate:finished evaluatedWithObject:self.controller.navigationController handler:nil];
+    [self waitForExpectationsWithTimeout:3 handler:nil];
+    XCTAssertTrue([self.controller.navigationController.topViewController isKindOfClass:[UIKitCatalogViewController class]]);
+}
+
+
+- (void)testControllerExamplesPresentAndDismiss {
+    [self hostControllerInWindow];
+    UIKitCatalogViewController *catalog = [[[UIKitCatalogViewController alloc] init] autorelease];
+    [catalog loadViewIfNeeded];
+    for (NSDictionary *entry in catalog.filteredEntries) {
+        NSString *name = [entry objectForKey:@"name"];
+        if (![name hasSuffix:@"Controller"]) continue;
+        UIKitDemoViewController *demo = [[[UIKitDemoViewController alloc] initWithEntry:entry] autorelease];
+        [self.controller.navigationController pushViewController:demo animated:NO];
+        [self.testWindow layoutIfNeeded];
+        [self.controller.navigationController.view layoutIfNeeded];
+        [demo.view layoutIfNeeded];
+        NSPredicate *attached = [NSPredicate predicateWithFormat:@"view.window != nil"];
+        [self expectationForPredicate:attached evaluatedWithObject:demo handler:nil];
+        [self waitForExpectationsWithTimeout:3 handler:nil];
+        UIButton *button = (UIButton *)[self findViewWithIdentifier:@"liveSample" inView:demo.view];
+        [button sendActionsForControlEvents:UIControlEventTouchUpInside];
+        NSPredicate *presented = [NSPredicate predicateWithFormat:@"presentedViewController != nil AND presentedViewController.transitionCoordinator == nil"];
+        [self expectationForPredicate:presented evaluatedWithObject:demo handler:nil];
+        [self waitForExpectationsWithTimeout:5 handler:nil];
+        XCTAssertNotNil(demo.presentedViewController, @"%@", name);
+        UIViewController *presentation = demo.presentedViewController;
+        if ([presentation isKindOfClass:[UINavigationController class]]) {
+            UIViewController *content = [(UINavigationController *)presentation topViewController];
+            XCTAssertNotNil(content.navigationItem.leftBarButtonItem, @"%@ must offer Done", name);
+        }
+        [demo dismissViewControllerAnimated:NO completion:nil];
+        NSPredicate *dismissed = [NSPredicate predicateWithFormat:@"presentedViewController == nil"];
+        [self expectationForPredicate:dismissed evaluatedWithObject:demo handler:nil];
+        [self waitForExpectationsWithTimeout:3 handler:nil];
+        [self.controller.navigationController popViewControllerAnimated:NO];
     }
 }
 

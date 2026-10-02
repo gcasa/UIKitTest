@@ -1,4 +1,5 @@
 #import "BasicViewController.h"
+#import "UIKitCatalogViewController.h"
 
 @interface BasicViewController ()
 @property (retain, nonatomic) NSMutableArray *greetings;
@@ -28,6 +29,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"UIKit Playground";
+    self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc] initWithTitle:@"Widgets"
+        style:UIBarButtonItemStylePlain target:self action:@selector(showCatalog:)] autorelease];
     self.greetings = [NSMutableArray array];
     self.nameTextField.delegate = self;
     [self.historyTableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"GreetingCell"];
@@ -41,6 +44,12 @@
     self.fontSizeStepper.accessibilityLabel = @"Greeting font size";
     [self progressChanged:self.progressSlider];
     [self fontSizeChanged:self.fontSizeStepper];
+}
+
+- (void)showCatalog:(id)sender {
+    UIKitCatalogViewController *catalog = [[UIKitCatalogViewController alloc] init];
+    [self.navigationController pushViewController:catalog animated:YES];
+    [catalog release];
 }
 
 - (NSString *)currentGreeting {

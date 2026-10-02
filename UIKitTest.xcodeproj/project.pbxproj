@@ -6,6 +6,14 @@
 };
 "objectVersion" = 56;
 "objects" = {
+"000000000000000000000064" = { isa = PBXFileReference; lastKnownFileType = "sourcecode.c.h"; path = "UIKitCatalogViewController.h"; sourceTree = "<group>"; };
+"000000000000000000000065" = { isa = PBXFileReference; lastKnownFileType = "sourcecode.c.objc"; path = "UIKitCatalogViewController.m"; sourceTree = "<group>"; };
+"0000000000000000000000C9" = { isa = PBXBuildFile; fileRef = "000000000000000000000065"; };
+"000000000000000000000066" = { isa = PBXFileReference; lastKnownFileType = "sourcecode.c.h"; path = "UIKitDemoViewController.h"; sourceTree = "<group>"; };
+"000000000000000000000067" = { isa = PBXFileReference; lastKnownFileType = "sourcecode.c.objc"; path = "UIKitDemoViewController.m"; sourceTree = "<group>"; };
+"0000000000000000000000CB" = { isa = PBXBuildFile; fileRef = "000000000000000000000067"; };
+"000000000000000000000068" = { isa = PBXFileReference; lastKnownFileType = "text.json"; path = "UIKitCatalog.json"; sourceTree = "<group>"; };
+"0000000000000000000000CC" = { isa = PBXBuildFile; fileRef = "000000000000000000000068"; };
 "000000000000000000000001" = {
 "isa" = "PBXFileReference";
 "lastKnownFileType" = "sourcecode.c.objc";
@@ -82,7 +90,7 @@
 };
 "00000000000000000000000F" = {
 "isa" = "PBXGroup";
-"children" = (000000000000000000000001, 000000000000000000000002, 000000000000000000000003, 000000000000000000000004, 000000000000000000000005, 000000000000000000000006);
+"children" = (000000000000000000000001, 000000000000000000000002, 000000000000000000000003, 000000000000000000000004, 000000000000000000000005, 000000000000000000000006, 000000000000000000000064, 000000000000000000000065, 000000000000000000000066, 000000000000000000000067, 000000000000000000000068);
 "path" = "UIKitTest";
 "sourceTree" = "<group>";
 };
@@ -106,13 +114,13 @@
 "000000000000000000000013" = {
 "isa" = "PBXSourcesBuildPhase";
 "buildActionMask" = 2147483647;
-"files" = (000000000000000000000008, 000000000000000000000009, 00000000000000000000000A);
+"files" = (000000000000000000000008, 000000000000000000000009, 00000000000000000000000A, 0000000000000000000000C9, 0000000000000000000000CB);
 "runOnlyForDeploymentPostprocessing" = 0;
 };
 "000000000000000000000014" = {
 "isa" = "PBXResourcesBuildPhase";
 "buildActionMask" = 2147483647;
-"files" = (00000000000000000000000B);
+"files" = (00000000000000000000000B, 0000000000000000000000CC);
 "runOnlyForDeploymentPostprocessing" = 0;
 };
 "000000000000000000000015" = {

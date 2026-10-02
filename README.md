@@ -1,13 +1,13 @@
 # UIKitTest
 
-A small Objective-C iOS app with a XIB-backed interface and 14 hosted XCTest tests for UIKit controls, layout, tables, and view controller interactions. The project uses manual reference counting and has no Swift source files or external dependencies on iOS.
+A small Objective-C iOS app with a XIB-backed interface and a searchable UIKit object gallery with hosted XCTest tests for UIKit controls, layout, tables, and view controller interactions. The project uses manual reference counting and has no Swift source files or external dependencies on iOS.
 
 ## Requirements
 
 - macOS with Xcode and an installed iOS simulator runtime.
 - iOS 15.0 or later (the project's deployment target).
 
-The project was verified with Xcode 26.3 on an iPhone 17 Pro simulator running iOS 26.2: all 14 tests passed.
+The project targets iOS 15 and later. The calendar preview requires iOS 16; older systems display its availability requirement. All 20 hosted tests pass on the iPhone 17 Pro simulator running iOS 26.2 with Xcode 26.3.
 
 ## Objective-C compatibility and memory management
 
@@ -28,6 +28,7 @@ This keeps the language usage conservative for Clang-based Objective-C toolchain
 5. Try the **Use name in greeting** switch, **Hello / Welcome** selector, progress slider, and font-size stepper.
 6. Tap a history row to open its detail screen; use Back to return. Swipe left on a row to delete it.
 7. Scroll down to **About this playground** to display an alert.
+8. Tap **Widgets** in the navigation bar to browse the UIKit object gallery. Switch between **Live widgets** and **All objects**, or search by class, category, or header name.
 
 Empty or whitespace-only input uses `UIKit` as the recipient. Turning personalization off disables the text field while preserving its contents. Changing controls updates the preview; sending a greeting adds a history row.
 
@@ -110,3 +111,18 @@ The controls sit in a vertical stack view with 16-point spacing inside a scroll 
 Each test creates a fresh controller and loads its XIB. Tests for presentation, navigation, table rendering, and focus host that controller in a temporary window and restore the app window afterward.
 
 These are hosted unit tests. Control events are dispatched through `UIControl`; table selection/deletion and keyboard Return callbacks are invoked through delegates. Alert dismissal is programmatic. Layout sizes are assigned directly. The suite does not simulate physical taps, swipe gestures, keyboard typing, or device rotation.
+
+## UIKit object gallery
+
+The gallery adds **49 live examples** and **524 reference entries** derived from named Objective-C class declarations in the public UIKit headers of the iOS 26.2 SDK. This defines the inventory precisely: it includes deprecated and platform-specific declarations, but excludes categories, protocols, forward declarations, and Swift-only APIs. It is not a claim that every UIKit API is an instantiable widget or available on iOS 15.
+
+Live examples cover labels, buttons, text entry, switches, sliders, steppers, segmented controls, progress, activity indicators, images, date and option pickers, calendar selection, page controls, search, scrolling, stacks, tables and cells, collections and cells, bars and bar items, blur, refresh, gestures, alerts and action sheets, sharing, color and font pickers, and controller containers. Interaction feedback appears above each preview. Controller examples open on demand and can be dismissed; action sheets and sharing anchor their popovers on iPad.
+
+Every inventoried class has a reference card showing its superclass, declaring header, category, and availability annotations from the SDK. Classes without a curated demo are never dynamically instantiated. The SDK snapshot is bundled, so browsing works offline and does not enumerate private runtime classes. The list uses reusable table cells and creates only the selected preview.
+
+- `UIKitCatalogViewController.h / .m`: searchable catalog and live/all scope selector.
+- `UIKitDemoViewController.h / .m`: curated previews and reference cards.
+- `UIKitCatalog.json`: checked-in public-header inventory.
+- `Scripts/generate_uikit_catalog.py`: regenerates the inventory from the installed simulator SDK. Run `python3 Scripts/generate_uikit_catalog.py` after intentionally upgrading the snapshot; update the SDK labels in the gallery and this document if the version changes.
+
+Additional hosted tests check catalog loading, unique entries, search and scope filtering, empty results, every live preview at narrow and landscape sizes, progress interaction, reference-card behavior, navigation from the Widgets button, and presentation/dismissal of every controller example. Existing greeting tests remain in place.
