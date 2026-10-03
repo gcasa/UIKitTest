@@ -437,6 +437,9 @@
     for (NSDictionary *entry in catalog.filteredEntries) {
         NSString *name = [entry objectForKey:@"name"];
         if (![name hasSuffix:@"Controller"]) continue;
+        if ([name isEqualToString:@"UITextFormattingViewController"]) {
+            if (@available(iOS 18.0, *)) {} else continue;
+        }
         UIKitDemoViewController *demo = [[[UIKitDemoViewController alloc] initWithEntry:entry] autorelease];
         [self.controller.navigationController pushViewController:demo animated:NO];
         [self.testWindow layoutIfNeeded];
@@ -452,7 +455,8 @@
         [self waitForExpectationsWithTimeout:5 handler:nil];
         XCTAssertNotNil(demo.presentedViewController, @"%@", name);
         UIViewController *presentation = demo.presentedViewController;
-        if ([presentation isKindOfClass:[UINavigationController class]]) {
+        if ([presentation isKindOfClass:[UINavigationController class]] &&
+                ![presentation isKindOfClass:[UIImagePickerController class]]) {
             UIViewController *content = [(UINavigationController *)presentation topViewController];
             XCTAssertNotNil(content.navigationItem.leftBarButtonItem, @"%@ must offer Done", name);
         }

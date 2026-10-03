@@ -7,7 +7,7 @@ A small Objective-C iOS app with a XIB-backed interface and a searchable UIKit o
 - macOS with Xcode and an installed iOS simulator runtime.
 - iOS 15.0 or later (the project's deployment target).
 
-The project targets iOS 15 and later. The calendar preview requires iOS 16; older systems display its availability requirement. All 20 hosted tests pass on the iPhone 17 Pro simulator running iOS 26.2 with Xcode 26.3.
+The project targets iOS 15 and later. The calendar preview requires iOS 16; older systems display its availability requirement. Before the additional examples were added, all 20 hosted tests passed on the iPhone 17 Pro simulator running iOS 26.2 with Xcode 26.3.
 
 ## Objective-C compatibility and memory management
 
@@ -15,9 +15,9 @@ The app and tests use manual `retain` / `release` memory management. ARC, zeroin
 
 Source code uses explicit instance variables and `@synthesize`, `retain` properties, balanced releases for allocated objects, and `dealloc` methods that call `[super dealloc]`. The application entry point uses `NSAutoreleasePool`. Retained outlets are released during controller teardown after clearing delegates and data sources.
 
-The source avoids ARC ownership qualifiers, automatic property synthesis, block literals, object subscripting, collection/number literals, and lightweight generics. Ordinary Objective-C properties, dot syntax, protocols, and fast enumeration remain.
+The source avoids ARC ownership qualifiers, automatic property synthesis, object subscripting, collection/number literals, and lightweight generics. Ordinary Objective-C properties, dot syntax, protocols, and fast enumeration remain. Menu actions and drop completion handlers use blocks, so the compiler/runtime must support them.
 
-This keeps the language usage conservative for Clang-based Objective-C toolchains on Linux. It does **not** provide a Linux port of Apple's frameworks: a Linux build still requires compatible Objective-C runtime, Foundation, UIKit, XIB loading, and (for tests) XCTest implementations, plus platform-specific build configuration. The supplied project builds with Xcode; Linux compilation has not been verified.
+This keeps the language usage conservative for Clang-based Objective-C toolchains on Linux. It does **not** provide a Linux port of Apple's frameworks: a Linux build still requires compatible Objective-C runtime, Foundation, UIKit, XIB loading, and (for tests) XCTest implementations, plus platform-specific build configuration. The supplied project builds with Xcode; The GNUstep build has been verified with libs-uikit and buildtool; it uses the installed UIKit framework without a project-specific buildtool.plist.
 
 ## Run the app
 
@@ -112,9 +112,17 @@ Each test creates a fresh controller and loads its XIB. Tests for presentation, 
 
 These are hosted unit tests. Control events are dispatched through `UIControl`; table selection/deletion and keyboard Return callbacks are invoked through delegates. Alert dismissal is programmatic. Layout sizes are assigned directly. The suite does not simulate physical taps, swipe gestures, keyboard typing, or device rotation.
 
+## Additional desktop examples
+
+The gallery includes color wells, paste controls, standalone search fields, configured list cells, reusable headers, empty/loading content, button/context/edit menus, document and image selection, dictionary lookup, text formatting, glass/background effects, text drag and drop, pointer hover and tooltips. Search by class name in **Widgets → Live widgets**.
+
+On GNUstep, menus and file panels use native AppKit interfaces. Right-click opens context menus. File selection reports the selected name; image selection updates a preview. Text formatting changes the preview's point size and bold face. Drag text from the teal source to the gray destination, or drop text from another desktop application.
+
+Desktop limits are explicit: image selection uses files rather than an OS photo library; camera capture is unavailable. The offline dictionary contains a small technical glossary, extensible with `UIKitDictionary.plist`, rather than a full language dictionary. Glass uses softened snapshots and translucent highlighting rather than Apple's compositor. Drag/drop currently supports text through the native pasteboard; general NSItemProvider loading is unavailable in GNUstep Base. Newer examples show availability messages on older iOS releases; the added source requires the iOS 26 SDK when building with Xcode. The added examples have not been run on an iOS simulator.
+
 ## UIKit object gallery
 
-The gallery adds **49 live examples** and **524 reference entries** derived from named Objective-C class declarations in the public UIKit headers of the iOS 26.2 SDK. This defines the inventory precisely: it includes deprecated and platform-specific declarations, but excludes categories, protocols, forward declarations, and Swift-only APIs. It is not a claim that every UIKit API is an instantiable widget or available on iOS 15.
+The gallery adds **73 live examples** and **524 reference entries** derived from named Objective-C class declarations in the public UIKit headers of the iOS 26.2 SDK. This defines the inventory precisely: it includes deprecated and platform-specific declarations, but excludes categories, protocols, forward declarations, and Swift-only APIs. It is not a claim that every UIKit API is an instantiable widget or available on iOS 15.
 
 Live examples cover labels, buttons, text entry, switches, sliders, steppers, segmented controls, progress, activity indicators, images, date and option pickers, calendar selection, page controls, search, scrolling, stacks, tables and cells, collections and cells, bars and bar items, blur, refresh, gestures, alerts and action sheets, sharing, color and font pickers, and controller containers. Interaction feedback appears above each preview. Controller examples open on demand and can be dismissed; action sheets and sharing anchor their popovers on iPad.
 

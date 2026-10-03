@@ -1,5 +1,10 @@
 #import "UIKitDemoViewController.h"
 
+@interface UIKitDemoViewController (ExtendedSamples)
+- (BOOL)buildExtendedSample:(NSString *)name;
+- (BOOL)openExtendedController;
+@end
+
 @implementation UIKitDemoViewController
 
 + (NSArray *)liveClassNames {
@@ -14,7 +19,7 @@
         @"UIPageViewController", @"UISplitViewController", @"UITableViewController", @"UICollectionViewController",
         @"UITapGestureRecognizer", @"UILongPressGestureRecognizer", @"UIPanGestureRecognizer",
         @"UIPinchGestureRecognizer", @"UIRotationGestureRecognizer", @"UISwipeGestureRecognizer",
-        @"UICalendarView", nil];
+        @"UICalendarView", @"UIColorWell", @"UIPasteControl", @"UISearchTextField", @"UICollectionViewListCell", @"UITableViewHeaderFooterView", @"UIContentUnavailableView", @"UIMenu", @"UIAction", @"UICommand", @"UIContextMenuInteraction", @"UIEditMenuInteraction", @"UIDocumentPickerViewController", @"UIDocumentBrowserViewController", @"UIImagePickerController", @"UIReferenceLibraryViewController", @"UITextFormattingViewController", @"UIGlassEffect", @"UIGlassContainerEffect", @"UIBackgroundExtensionView", @"UIDragInteraction", @"UIDropInteraction", @"UIHoverGestureRecognizer", @"UIPointerInteraction", @"UIToolTipInteraction", nil];
 }
 
 - (id)initWithEntry:(NSDictionary *)entry {
@@ -95,10 +100,12 @@
 }
 
 - (void)buildSample:(NSString *)name {
+    if ([self buildExtendedSample:name]) return;
     if ([name isEqualToString:@"UILabel"]) {
         [self addSample:[self label:@"Hello, UIKit!\nLabels support multiple lines and Dynamic Type." style:UIFontTextStyleTitle2] height:0];
     } else if ([name isEqualToString:@"UIButton"]) {
         [self addSample:[self button:@"Tap me" action:@selector(tapped:)] height:0];
+        UIButton *menuButton=[UIButton buttonWithType:UIButtonTypeSystem]; [menuButton setTitle:@"Button menu" forState:UIControlStateNormal]; menuButton.menu=[self exampleMenu]; menuButton.showsMenuAsPrimaryAction=YES; [_stack addArrangedSubview:menuButton];
     } else if ([name isEqualToString:@"UITextField"]) {
         UITextField *field = [[[UITextField alloc] init] autorelease];
         field.borderStyle = UITextBorderStyleRoundedRect;
@@ -376,6 +383,7 @@
     [self presentViewController:alert animated:YES completion:nil];
 }
 - (void)openController:(UIButton *)sender {
+    if ([self openExtendedController]) return;
     NSString *name = [_entry objectForKey:@"name"];
     if ([name isEqualToString:@"UIAlertController"]) { [self showAlertStyle:UIAlertControllerStyleAlert sender:sender]; return; }
     if ([name isEqualToString:@"UIActivityViewController"]) {
@@ -436,12 +444,189 @@
     [self presentViewController:navigation animated:YES completion:nil];
 }
 
+
+- (UIMenu *)exampleMenu {
+    UILabel *feedback = _feedback;
+    UIAction *hello = [UIAction actionWithTitle:@"Say hello" image:nil identifier:nil handler:^(UIAction *action) { feedback.text = @"Hello from the menu!"; }];
+    UIAction *copy = [UIAction actionWithTitle:@"Copy sample text" image:nil identifier:nil handler:^(UIAction *action) { [UIPasteboard generalPasteboard].string = @"Copied from the UIKit menu"; feedback.text = @"Copied sample text to the clipboard."; }];
+    UICommand *command = [UICommand commandWithTitle:@"Count an action" image:nil action:@selector(tapped:) propertyList:nil];
+    return [UIMenu menuWithTitle:@"Example actions" children:[NSArray arrayWithObjects:hello, copy, command, nil]];
+}
+
+- (BOOL)buildExtendedSample:(NSString *)name {
+#if !GNUSTEP
+    BOOL available=YES;
+    if ([name isEqualToString:@"UIPasteControl"] || [name isEqualToString:@"UIEditMenuInteraction"]) {
+        if (@available(iOS 16.0, *)) {} else available=NO;
+    }
+    if ([name isEqualToString:@"UIContentUnavailableView"] || [name isEqualToString:@"UIToolTipInteraction"]) {
+        if (@available(iOS 17.0, *)) {} else available=NO;
+    }
+    if ([name isEqualToString:@"UITextFormattingViewController"]) {
+        if (@available(iOS 18.0, *)) {} else available=NO;
+    }
+    if ([name isEqualToString:@"UIGlassEffect"] || [name isEqualToString:@"UIGlassContainerEffect"] || [name isEqualToString:@"UIBackgroundExtensionView"]) {
+        if (@available(iOS 26.0, *)) {} else available=NO;
+    }
+    if (!available) { [self addSample:[self label:@"This example requires a newer iOS version; see the availability information below." style:UIFontTextStyleBody] height:120]; return YES; }
+#endif
+    if ([name isEqualToString:@"UIColorWell"]) {
+        UIColorWell *well = [[[UIColorWell alloc] init] autorelease];
+        well.selectedColor = [UIColor systemBlueColor];
+        [well addTarget:self action:@selector(colorWellChanged:) forControlEvents:UIControlEventValueChanged];
+        [self addSample:well height:64];
+        _feedback.text = @"Click the color well and choose a color.";
+    } else if ([name isEqualToString:@"UISearchTextField"]) {
+        UISearchTextField *field = [[[UISearchTextField alloc] init] autorelease];
+        field.placeholder = @"Standalone search field";
+        [field addTarget:self action:@selector(textChanged:) forControlEvents:UIControlEventEditingChanged];
+        [self addSample:field height:44];
+    } else if ([name isEqualToString:@"UIPasteControl"]) {
+        UITextView *text = [[[UITextView alloc] init] autorelease]; text.text = @"Paste text here: "; text.font = [UIFont systemFontOfSize:17];
+        _secondarySample = [text retain]; [_stack addArrangedSubview:text]; [text.heightAnchor constraintEqualToConstant:100].active = YES;
+        UIPasteControl *paste = [[[UIPasteControl alloc] initWithConfiguration:[[[UIPasteControlConfiguration alloc] init] autorelease]] autorelease]; paste.target = text;
+        [self addSample:paste height:44];
+        [_stack addArrangedSubview:[self button:@"Copy example text" action:@selector(copyExample:)]];
+        _feedback.text = @"Copy the example or text from another app, then press Paste.";
+    } else if ([name isEqualToString:@"UICollectionViewListCell"]) {
+        UICollectionViewListCell *cell = [[[UICollectionViewListCell alloc] init] autorelease];
+        UIListContentConfiguration *configuration = [cell defaultContentConfiguration]; configuration.text = @"A configured list cell"; configuration.secondaryText = @"Title, subtitle and image supplied by a content configuration"; configuration.image = [UIImage systemImageNamed:@"doc.text"]; cell.contentConfiguration = configuration;
+        [self addSample:cell height:100]; [_stack addArrangedSubview:[self button:@"Update content" action:@selector(updateContentExample:)]];
+    } else if ([name isEqualToString:@"UITableViewHeaderFooterView"]) {
+        UITableViewHeaderFooterView *header = [[[UITableViewHeaderFooterView alloc] initWithReuseIdentifier:@"ExampleHeader"] autorelease];
+        header.textLabel.text = @"Section heading"; header.detailTextLabel.text = @"Reusable header or footer content";
+        [self addSample:header height:80]; [_stack addArrangedSubview:[self button:@"Update heading" action:@selector(updateContentExample:)]];
+    } else if ([name isEqualToString:@"UIContentUnavailableView"]) {
+        UIContentUnavailableConfiguration *configuration = [UIContentUnavailableConfiguration searchConfiguration];
+        UIContentUnavailableView *view = [[[UIContentUnavailableView alloc] initWithConfiguration:configuration] autorelease];
+        [self addSample:view height:160]; [_stack addArrangedSubview:[self button:@"Toggle empty / loading" action:@selector(updateContentExample:)]];
+    } else if ([name isEqualToString:@"UIMenu"] || [name isEqualToString:@"UIAction"] || [name isEqualToString:@"UICommand"]) {
+        UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem]; [button setTitle:@"Open actions menu" forState:UIControlStateNormal]; button.menu = [self exampleMenu]; button.showsMenuAsPrimaryAction = YES; [self addSample:button height:48];
+    } else if ([name isEqualToString:@"UIContextMenuInteraction"]) {
+        UILabel *label = [self label:@"Open the context menu here (right-click on desktop)" style:UIFontTextStyleHeadline]; label.userInteractionEnabled = YES; label.backgroundColor = [UIColor secondarySystemGroupedBackgroundColor];
+        [label addInteraction:[[[UIContextMenuInteraction alloc] initWithDelegate:self] autorelease]]; [self addSample:label height:140];
+    } else if ([name isEqualToString:@"UIEditMenuInteraction"]) {
+        UIButton *button = [self button:@"Show edit menu" action:@selector(showEditExample:)];
+        _extraInteraction = [[UIEditMenuInteraction alloc] initWithDelegate:self]; [button addInteraction:_extraInteraction]; [self addSample:button height:48];
+    } else if ([name isEqualToString:@"UIHoverGestureRecognizer"] || [name isEqualToString:@"UIPointerInteraction"] || [name isEqualToString:@"UIToolTipInteraction"]) {
+        UIView *area = [[[UIView alloc] init] autorelease]; area.backgroundColor = [UIColor systemTealColor];
+        [area addGestureRecognizer:[[[UIHoverGestureRecognizer alloc] initWithTarget:self action:@selector(hoverExample:)] autorelease]];
+        [area addInteraction:[[[UIPointerInteraction alloc] initWithDelegate:nil] autorelease]];
+        [area addInteraction:[[[UIToolTipInteraction alloc] initWithDefaultToolTip:@"This is a UIKit tooltip. Move the pointer away to dismiss it."] autorelease]];
+        [self addSample:area height:140]; _feedback.text = @"Hover over the colored area; pause to see its tooltip.";
+    } else if ([name isEqualToString:@"UIDragInteraction"] || [name isEqualToString:@"UIDropInteraction"]) {
+        UIView *source = [[[UIView alloc] init] autorelease]; source.backgroundColor = [UIColor systemTealColor];
+        [source addInteraction:[[[UIDragInteraction alloc] initWithDelegate:self] autorelease]];
+        [self addSample:source height:90];
+        UIView *target = [[[UIView alloc] init] autorelease]; target.backgroundColor = [UIColor secondarySystemGroupedBackgroundColor];
+        [target addInteraction:[[[UIDropInteraction alloc] initWithDelegate:self] autorelease]];
+        _secondarySample = [target retain]; [_stack addArrangedSubview:target]; [target.heightAnchor constraintEqualToConstant:110].active = YES;
+        _feedback.text = @"Drag the teal source onto the gray destination. You can also drop text from another app.";
+    } else if ([name isEqualToString:@"UIGlassEffect"] || [name isEqualToString:@"UIGlassContainerEffect"]) {
+        UIView *backdrop = [[[UIView alloc] initWithFrame:CGRectMake(0,0,360,180)] autorelease];
+        NSArray *colors = [NSArray arrayWithObjects:[UIColor systemBlueColor], [UIColor systemTealColor], [UIColor redColor], nil];
+        UIStackView *bands=[[[UIStackView alloc] initWithFrame:backdrop.bounds] autorelease]; bands.axis=UILayoutConstraintAxisHorizontal; bands.distribution=UIStackViewDistributionFillEqually; bands.autoresizingMask=UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
+        for (NSInteger i=0; i<3; i++) { UILabel *stripe = [self label:[NSString stringWithFormat:@"Color %ld",(long)i+1] style:UIFontTextStyleTitle2]; stripe.backgroundColor=[colors objectAtIndex:i]; [bands addArrangedSubview:stripe]; } [backdrop addSubview:bands];
+        UIGlassEffect *glass = [UIGlassEffect effectWithStyle:UIGlassEffectStyleRegular]; glass.interactive = YES;
+        UIVisualEffectView *effect = [[[UIVisualEffectView alloc] initWithEffect:glass] autorelease]; effect.frame=CGRectMake(20,45,320,90); effect.autoresizingMask=UIViewAutoresizingFlexibleWidth;
+        UILabel *label=[self label:@"Glass over colored content" style:UIFontTextStyleHeadline]; label.frame=CGRectMake(12,16,296,60); label.autoresizingMask=UIViewAutoresizingFlexibleWidth; [effect.contentView addSubview:label]; [backdrop addSubview:effect];
+        if ([name isEqualToString:@"UIGlassContainerEffect"]) { UIGlassContainerEffect *container = [[[UIGlassContainerEffect alloc] init] autorelease]; container.spacing=20; effect.effect=container; }
+        _secondarySample=[effect retain]; [self addSample:backdrop height:180]; [_stack addArrangedSubview:[self button:@"Change tint" action:@selector(changeGlassExample:)]];
+#if GNUSTEP
+        _feedback.text=@"Desktop approximation: softened backdrop snapshots and a translucent highlight. Apple compositor animations are not reproduced.";
+#endif
+    } else if ([name isEqualToString:@"UIBackgroundExtensionView"]) {
+        UIBackgroundExtensionView *extension = [[[UIBackgroundExtensionView alloc] initWithFrame:CGRectMake(0,0,360,180)] autorelease]; extension.automaticallyPlacesContentView=NO;
+        UILabel *content=[self label:@"Content\nwith extended background" style:UIFontTextStyleTitle2]; content.frame=CGRectMake(90,20,180,140); content.backgroundColor=[UIColor systemTealColor]; content.autoresizingMask=UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleRightMargin;
+        extension.contentView=content; [self addSample:extension height:180]; [_stack addArrangedSubview:[self button:@"Change background" action:@selector(changeGlassExample:)]];
+    } else if ([name isEqualToString:@"UIDocumentPickerViewController"] || [name isEqualToString:@"UIDocumentBrowserViewController"] || [name isEqualToString:@"UIImagePickerController"] || [name isEqualToString:@"UIReferenceLibraryViewController"] || [name isEqualToString:@"UITextFormattingViewController"]) {
+        if ([name isEqualToString:@"UIImagePickerController"]) { UIImageView *preview=[[[UIImageView alloc] init] autorelease]; preview.contentMode=UIViewContentModeScaleAspectFit; _secondarySample=[preview retain]; [_stack addArrangedSubview:preview]; [preview.heightAnchor constraintEqualToConstant:160].active=YES; }
+        if ([name isEqualToString:@"UITextFormattingViewController"]) { UILabel *preview=[self label:@"Formatting changes update this text." style:UIFontTextStyleBody]; _secondarySample=[preview retain]; [_stack addArrangedSubview:preview]; }
+        [self addSample:[self button:@"Open example" action:@selector(openController:)] height:48];
+#if GNUSTEP
+        if ([name isEqualToString:@"UIReferenceLibraryViewController"]) _feedback.text=@"Look up ‘interface’ in the bundled technical glossary. This is not a complete language dictionary.";
+#endif
+    } else return NO;
+    return YES;
+}
+- (void)colorWellChanged:(UIColorWell *)sender { _feedback.text=@"Selected color updated."; _feedback.backgroundColor=sender.selectedColor; }
+- (void)copyExample:(id)sender { [UIPasteboard generalPasteboard].string=@"Hello from UIPasteControl!"; _feedback.text=@"Copied. Press Paste to insert the text."; }
+- (void)updateContentExample:(id)sender {
+    _tapCount++;
+    if ([_sample isKindOfClass:[UICollectionViewListCell class]]) { UIListContentConfiguration *c=[(UICollectionViewListCell *)_sample defaultContentConfiguration]; c.text=[NSString stringWithFormat:@"Updated row %ld",(long)_tapCount]; c.secondaryText=@"Configuration replaced without replacing the cell."; [(UICollectionViewListCell *)_sample setContentConfiguration:c]; }
+    else if ([_sample isKindOfClass:[UITableViewHeaderFooterView class]]) [(UITableViewHeaderFooterView *)_sample textLabel].text=[NSString stringWithFormat:@"Section %ld",(long)_tapCount];
+    else [(UIContentUnavailableView *)_sample setConfiguration:_tapCount%2 ? [UIContentUnavailableConfiguration loadingConfiguration] : [UIContentUnavailableConfiguration searchConfiguration]];
+    _feedback.text=@"Content updated.";
+}
+- (UIContextMenuConfiguration *)contextMenuInteraction:(UIContextMenuInteraction *)interaction configurationForMenuAtLocation:(CGPoint)location {
+    UIMenu *menu=[self exampleMenu];
+    return [UIContextMenuConfiguration configurationWithIdentifier:nil previewProvider:nil actionProvider:^UIMenu *(NSArray *suggested) { return menu; }];
+}
+- (UIMenu *)editMenuInteraction:(UIEditMenuInteraction *)interaction menuForConfiguration:(UIEditMenuConfiguration *)configuration suggestedActions:(NSArray *)actions { return [self exampleMenu]; }
+- (void)showEditExample:(id)sender { [(UIEditMenuInteraction *)_extraInteraction presentEditMenuWithConfiguration:[UIEditMenuConfiguration configurationWithIdentifier:nil sourcePoint:CGPointMake(20,20)]]; }
+- (void)hoverExample:(UIHoverGestureRecognizer *)gesture { _feedback.text=gesture.state==UIGestureRecognizerStateEnded ? @"Pointer left the example." : @"Pointer is over the example."; }
+- (NSArray *)dragInteraction:(UIDragInteraction *)interaction itemsForBeginningSession:(id<UIDragSession>)session {
+#if GNUSTEP
+    // GNUstep Base currently has no working NSItemProvider. The desktop bridge
+    // exports this local string through the native drag pasteboard.
+    UIDragItem *item=[[[UIDragItem alloc] initWithItemProvider:nil] autorelease];
+#else
+    NSItemProvider *provider=[[[NSItemProvider alloc] initWithObject:@"Dragged text from UIKit"] autorelease];
+    UIDragItem *item=[[[UIDragItem alloc] initWithItemProvider:provider] autorelease];
+#endif
+    item.localObject=@"Dragged text from UIKit"; return [NSArray arrayWithObject:item];
+}
+- (BOOL)dropInteraction:(UIDropInteraction *)interaction canHandleSession:(id<UIDropSession>)session { return [session hasItemsConformingToTypeIdentifiers:[NSArray arrayWithObject:@"public.text"]]; }
+- (UIDropProposal *)dropInteraction:(UIDropInteraction *)interaction sessionDidUpdate:(id<UIDropSession>)session { return [[[UIDropProposal alloc] initWithDropOperation:UIDropOperationCopy] autorelease]; }
+- (void)dropInteraction:(UIDropInteraction *)interaction performDrop:(id<UIDropSession>)session {
+    UILabel *feedback=_feedback;
+    [session loadObjectsOfClass:[NSString class] completion:^(NSArray *objects) { feedback.text=[NSString stringWithFormat:@"Dropped: %@",[objects componentsJoinedByString:@", "]]; }];
+}
+- (void)changeGlassExample:(id)sender {
+    _tapCount++;
+    UIColor *color=_tapCount%2 ? [UIColor colorWithRed:0.2 green:0.6 blue:1 alpha:0.3] : [UIColor colorWithWhite:1 alpha:0.2];
+    if ([_secondarySample isKindOfClass:[UIVisualEffectView class]]) { UIGlassEffect *effect=[UIGlassEffect effectWithStyle:UIGlassEffectStyleRegular]; effect.tintColor=color; [(UIVisualEffectView *)_secondarySample setEffect:effect]; }
+    else { UIBackgroundExtensionView *extension=(UIBackgroundExtensionView *)_sample; extension.contentView.backgroundColor=_tapCount%2 ? [UIColor systemBlueColor] : [UIColor systemTealColor]; [extension setNeedsDisplay]; }
+}
+- (BOOL)openExtendedController {
+    NSString *name=[_entry objectForKey:@"name"]; UIViewController *controller=nil;
+    if ([name isEqualToString:@"UIDocumentPickerViewController"]) { UIDocumentPickerViewController *picker=[[[UIDocumentPickerViewController alloc] initWithDocumentTypes:[NSArray arrayWithObject:@"public.data"] inMode:UIDocumentPickerModeOpen] autorelease]; picker.delegate=self; controller=picker; }
+    else if ([name isEqualToString:@"UIDocumentBrowserViewController"]) { UIDocumentBrowserViewController *browser=[[[UIDocumentBrowserViewController alloc] initForOpeningFilesWithContentTypes:[NSArray arrayWithObject:@"public.data"]] autorelease]; browser.delegate=self; controller=browser; }
+    else if ([name isEqualToString:@"UIImagePickerController"]) { UIImagePickerController *picker=[[[UIImagePickerController alloc] init] autorelease]; picker.sourceType=UIImagePickerControllerSourceTypePhotoLibrary; picker.delegate=(id)self; controller=picker; }
+    else if ([name isEqualToString:@"UIReferenceLibraryViewController"]) controller=[[[UIReferenceLibraryViewController alloc] initWithTerm:@"interface"] autorelease];
+    else if ([name isEqualToString:@"UITextFormattingViewController"]) { UITextFormattingViewController *format=[[[UITextFormattingViewController alloc] initWithConfiguration:[[[UITextFormattingViewControllerConfiguration alloc] init] autorelease]] autorelease]; format.delegate=self; controller=format; }
+    else return NO;
+    controller.title=name;
+    controller.navigationItem.leftBarButtonItem=[[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(dismissExample:)] autorelease];
+#if GNUSTEP
+    [self presentViewController:[[[UINavigationController alloc] initWithRootViewController:controller] autorelease] animated:YES completion:nil];
+#else
+    // Image pickers are themselves navigation controllers on iOS.
+    if ([controller isKindOfClass:[UIImagePickerController class]]) [self presentViewController:controller animated:YES completion:nil];
+    else [self presentViewController:[[[UINavigationController alloc] initWithRootViewController:controller] autorelease] animated:YES completion:nil];
+#endif
+    return YES;
+}
+- (void)documentPicker:(UIDocumentPickerViewController *)controller didPickDocumentsAtURLs:(NSArray *)URLs { _feedback.text=[NSString stringWithFormat:@"Selected: %@",[[URLs firstObject] lastPathComponent]]; [self dismissViewControllerAnimated:YES completion:nil]; }
+- (void)documentPickerWasCancelled:(UIDocumentPickerViewController *)controller { _feedback.text=@"Document selection cancelled."; [self dismissViewControllerAnimated:YES completion:nil]; }
+- (void)documentBrowser:(UIDocumentBrowserViewController *)controller didPickDocumentsAtURLs:(NSArray *)URLs { _feedback.text=[NSString stringWithFormat:@"Opened: %@",[[URLs firstObject] lastPathComponent]]; [self dismissViewControllerAnimated:YES completion:nil]; }
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info { [(UIImageView *)_secondarySample setImage:[info objectForKey:UIImagePickerControllerOriginalImage]]; _feedback.text=@"Selected image shown below."; [self dismissViewControllerAnimated:YES completion:nil]; }
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker { _feedback.text=@"Image selection cancelled."; [self dismissViewControllerAnimated:YES completion:nil]; }
+- (void)textFormattingViewController:(UITextFormattingViewController *)controller didChangeValue:(UITextFormattingViewControllerChangeValue *)change {
+    UILabel *preview=(UILabel *)_secondarySample;
+    if (change.font) preview.font=change.font;
+    else if (change.numberValue) preview.font=[UIFont systemFontOfSize:change.numberValue.doubleValue];
+    _feedback.text=[NSString stringWithFormat:@"Preview font: %.0f pt",preview.font.pointSize];
+}
+
 - (void)dealloc {
     if ([_sample isKindOfClass:[UITableView class]]) { [(UITableView *)_sample setDelegate:nil]; [(UITableView *)_sample setDataSource:nil]; }
     if ([_sample isKindOfClass:[UICollectionView class]]) { [(UICollectionView *)_sample setDelegate:nil]; [(UICollectionView *)_sample setDataSource:nil]; }
     if ([_sample isKindOfClass:[UIPickerView class]]) { [(UIPickerView *)_sample setDelegate:nil]; [(UIPickerView *)_sample setDataSource:nil]; }
     if ([_sample isKindOfClass:[UISearchBar class]]) [(UISearchBar *)_sample setDelegate:nil];
     if ([_sample isKindOfClass:[UITabBar class]]) [(UITabBar *)_sample setDelegate:nil];
+    [_secondarySample release];
+    [_extraInteraction release];
     [_entry release];
     [_stack release];
     [_feedback release];
